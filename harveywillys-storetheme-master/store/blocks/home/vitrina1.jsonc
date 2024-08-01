@@ -1,0 +1,147 @@
+{
+  // vitrina SALE del HOME
+  // titulo de vitrina
+  "rich-text#sale": {
+    "props": {
+      "text": "NEW ARRIVALS",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-3",
+      "blockClass": "titulosHome"
+    },
+    "title": "Titulo Vitrina 1"
+  },
+  "flex-layout.row#vitrina-sale": {
+    "props": {
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "flex-layout.col#vitrina-sale"
+    ],
+    "title": "Vitrina 1"
+  },
+  "flex-layout.col#vitrina-sale": {
+    "props": {
+      "width": "90%"
+    },
+    "children": [
+      "list-context.product-list#vitrina-sale"
+    ]
+  },
+  "list-context.product-list#vitrina-sale": {
+    "props": {
+      "maxItems": 8
+    },
+    "blocks": [
+      "product-summary.shelf#vitrina-principal"
+    ],
+    "children": [
+      "slider-layout#vitrinas-home"
+    ],
+    "title": "Vitrina 1"
+  },
+  "slider-layout#vitrinas-home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "arrowSize": {
+        "mobile": 14,
+        "desktop": 18
+      },
+      "autoplay": {
+        "timeout": 2500,
+        "stopOnHover": true
+      },
+      "slideTransition": {
+        "speed": 600,
+        "delay": 0,
+        "timing": ""
+      },
+      "navigationStep": 1,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      "usePagination": true,
+      "blockClass": "sliderVitrina"
+    },
+    "title": "Slider Vitrina 1"
+  },
+  //VITRINA PARA PAGINA 404 - NOT FOUND
+  "rich-text#vitrina-not-found": {
+    "props": {
+      "text": "VITRINA DE PRUEBA",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-3",
+      "blockClass": "titulosHome"
+    },
+    "title": "Titulo Vitrina Not Found"
+  },
+  "flex-layout.row#vitrina-not-found": {
+    "props": {
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "flex-layout.col#vitrina-not-found"
+    ],
+    "title": "Vitrina Not Found"
+  },
+  "flex-layout.col#vitrina-not-found": {
+    "props": {
+      "width": "90%"
+    },
+    "children": [
+      "rich-text#vitrina-not-found",
+      "list-context.product-list#vitrina-not-found"
+    ]
+  },
+  "list-context.product-list#vitrina-not-found": {
+    "props": {
+      "maxItems": 8
+    },
+    "blocks": [
+      "product-summary.shelf#vitrina-principal"
+    ],
+    "children": [
+      "slider-layout#vitrina-not-found"
+    ],
+    "title": "Vitrina Not Found"
+  },
+  "slider-layout#vitrina-not-found": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "dots": false,
+      "infinite": true,
+      "fullWidth": false,
+      "arrowSize": {
+        "mobile": 14,
+        "desktop": 18
+      },
+      "autoplay": {
+        "timeout": 2500,
+        "stopOnHover": true
+      },
+      "slideTransition": {
+        "speed": 600,
+        "delay": 0,
+        "timing": ""
+      },
+      "navigationStep": 1,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "false",
+      "usePagination": true,
+      "blockClass": "sliderVitrina"
+    },
+    "title": "Slider Vitrina Not Found"
+  }
+}

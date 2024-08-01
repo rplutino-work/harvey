@@ -1,0 +1,98 @@
+{
+  "flex-layout.row#related-products1": {
+    "props": {
+      "rowGap": 0,
+      "horizontalAlign": "center",
+      "paddingBottom": 5,
+      "marginBottom": 8,
+      "fullWidth": true,
+      "blockClass": "vitrinaRelacionados"
+    },
+    "children": ["flex-layout.col#related-products1"],
+    "title": "Productos Relacionados"
+  },
+
+  "flex-layout.col#related-products1": {
+    "props": {
+      "width": "90%",
+      "blockClass": "colProductosRel"
+    },
+    "children": ["shelf.relatedProducts#1"]
+  },
+
+  //-- VITRINA #1 de Productos Relacionados
+  "shelf.relatedProducts#1": {
+    "blocks": ["product-summary.shelf#vitrina-principal"],
+    "props": {
+      "recommendation": "view",
+      "productList": {
+        "titleText": "COMPLETÁ TU LOOK",
+        "itemsPerPage": 4,
+        "arrows": true,
+        "minItemsPerPage": 2
+      }
+    }
+  },
+
+  //-- VITRINA PARA 404
+  "shelf.relatedProducts#not-found": {
+    "blocks": ["product-summary.shelf#vitrina-principal"],
+    "props": {
+      "recommendation": "view",
+      "productList": {
+        "titleText": "pagina no encontrada",
+        "itemsPerPage": 4,
+        "arrows": true,
+        "minItemsPerPage": 2
+      }
+    }
+  },
+  //NUEVA VITRINA PARA PDP
+  "flex-layout.row#home--trendingShelf": {
+    "children": ["flex-layout.col#home--trendingShelf"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "trendingShelf__wrapper"
+    },
+    "title": "vitrina pdp secundaria"
+  },
+  "flex-layout.col#home--trendingShelf": {
+    "children": [
+      "rich-text#home--trendingShelf--title",
+      "list-context.product-list#home--trendingShelf"
+    ]
+  },
+  "rich-text#home--trendingShelf--title": {
+    "props": {
+      "text": "## TRENDING RIGHT NOW",
+      "blockClass": "trendingShelf__title"
+    }
+  },
+  "list-context.product-list#home--trendingShelf": {
+    "blocks": ["product-summary.shelf#vitrina-principal"],
+    "children": ["slider-layout#main-shelf"],
+    "props": {
+      "collection": "137",
+      "maxItems": 8
+    },
+    "title": "vitrina"
+  },
+  "slider-layout#main-shelf": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "autoplay": {
+        "timeout": 4000,
+        "stopOnHover": true
+      },
+      "infinite": false,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "mobileOnly",
+      "blockClass": "mainShelf__slider"
+    },
+    "title": "slider productos"
+  }
+}

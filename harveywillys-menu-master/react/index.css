@@ -1,0 +1,87 @@
+.itemFirstLevel,
+.enlace,
+.itemSecondLevel{
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.listadoItems{
+    position: relative;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: .5rem;
+}
+.itemFirstLevel{
+    padding: 0 .25rem;
+    margin: .5rem 2.75rem;
+    cursor: pointer;
+    transition: 200ms;
+}
+.itemFirstLevel::after:hover {
+    width: 100%;
+}
+.itemFirstLevel :hover{
+    border-bottom: 2px solid #9c8851;
+}
+.containerTable{
+    z-index: 5;
+    padding: 1.5rem 6rem;
+    position: absolute;
+    background: #fff;
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    border-top: 1px solid #e7e7e7;
+    animation-name: desplazar;
+    animation-duration: 800ms;
+}
+@keyframes desplazar {
+    from {
+        opacity: 0;
+        height: 0px;
+    }
+    to {
+        height: 100%;
+        opacity: 1;
+    }
+}
+.colTable{
+    padding: .8rem 4rem;
+    display: inline-block;
+}
+.item{
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    line-height: 1.5;
+    margin-top: .35rem;
+    margin-bottom: .35rem;
+    width: auto;
+    min-width: max-content;
+    font-size: .825rem;
+    transition: all 200ms ease-in;
+}
+.itemSecondLevel{
+    font-weight: 500;
+    margin-bottom: .75rem;
+    line-height: 3;
+    transition: all 200ms ease-in;
+}
+.itemSecondLevel:hover,
+.item:hover{
+    color: #9c8851;
+}
+.menuContainer{
+    min-height: 35px;
+    display: inline-grid;
+    align-content: center;
+    justify-content: center;
+}
+.secondLevelContainer{
+    display: flex;
+    justify-content: center;
+}

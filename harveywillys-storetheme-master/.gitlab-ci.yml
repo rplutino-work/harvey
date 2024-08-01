@@ -1,0 +1,4 @@
+include:
+  - project: 'devops/workflow/vtex-io'
+    file: 
+      - 'vtex-io-main.yml'

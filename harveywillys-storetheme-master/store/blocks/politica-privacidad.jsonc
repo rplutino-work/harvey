@@ -1,0 +1,46 @@
+{
+  "store.custom#pol-privacidad": {
+    "children": [
+      "no-index",
+      "flex-layout.row#pol-privacidad"
+    ]
+  },
+  "flex-layout.row#pol-privacidad": {
+    "props": {
+      "horizontalAlign": "center",
+      "marginTop": 6,
+      "marginBottom": 8,
+      "blockClass": "rowLanding"
+    },
+    "children": [
+      "flex-layout.col#pol-privacidad"
+    ]
+  },
+  "flex-layout.col#pol-privacidad": {
+    "props": {
+      "width": "80%",
+      "rowGap": 1
+    },
+    "children": [
+      "rich-text#pol-privacidad-title",
+      "rich-text#pol-privacidad-content"
+    ]
+  },
+  "rich-text#pol-privacidad-title": {
+    "props": {
+      "text": "POLÍTICA DE PRIVACIDAD",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heding-2",
+      "blockClass": "tituloLanding"
+    }
+  },
+  "rich-text#pol-privacidad-content": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae bibendum quam. Etiam ac sem et dui placerat efficitur nec a metus. Ut hendrerit libero eu ex ultricies, quis finibus massa consectetur. Sed sed arcu massa. Curabitur bibendum urna ut blandit tempor. Maecenas aliquam massa vel eleifend tincidunt. Quisque quis euismod massa, vitae posuere dui. Donec eu suscipit risus. Quisque id sapien pharetra dolor aliquet congue in ut diam. Vestibulum dapibus placerat ante, ut tempor sapien viverra ut. ",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "font": "t-body"
+    }
+  }
+}

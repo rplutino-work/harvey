@@ -1,0 +1,75 @@
+{
+  "slider-layout#banner2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showPaginationDots": "always",
+      "showNavigationArrows": "never",
+      "blockClass": "sliderBanner"
+    },
+    "children": [
+      "image#banner2-1", 
+      "image#banner2-2", 
+      "image#banner2-3", 
+      "image#banner2-4",
+      "image#banner2-5", 
+      "image#banner2-6", 
+      "image#banner2-7", 
+      "image#banner2-8"
+    ],
+    "title": "Slider Mostramos Tu Estilo"
+  },
+  "image#banner2-1": {
+    "props": {
+      "src": "https://delucca.vteximg.com.br/arquivos/img-test.png",
+      "blockClass": "imagePromo"
+    }
+  },
+  "image#banner2-2": {
+    "props": {
+      "src": "https://delucca.vteximg.com.br/arquivos/img-test.png",
+      "blockClass": "imagePromo"
+    }
+  },
+  "image#banner2-3": {
+    "props": {
+      "src": "https://delucca.vteximg.com.br/arquivos/img-test.png",
+      "blockClass": "imagePromo"
+    }
+  },
+  "image#banner2-4": {
+    "props": {
+      "src": "https://delucca.vteximg.com.br/arquivos/img-test.png",
+      "blockClass": "imagePromo"
+    }
+  },
+  "image#banner2-5": {
+    "props": {
+      "src": "https://delucca.vteximg.com.br/arquivos/img-test.png",
+      "blockClass": "imagePromo"
+    }
+  },
+  "image#banner2-6": {
+    "props": {
+      "src": "https://delucca.vteximg.com.br/arquivos/img-test.png",
+      "blockClass": "imagePromo"
+    }
+  },
+  "image#banner2-7": {
+    "props": {
+      "src": "https://delucca.vteximg.com.br/arquivos/img-test.png",
+      "blockClass": "imagePromo"
+    }
+  },
+  "image#banner2-8": {
+    "props": {
+      "src": "https://delucca.vteximg.com.br/arquivos/img-test.png",
+      "blockClass": "imagePromo"
+    }
+  }
+
+}

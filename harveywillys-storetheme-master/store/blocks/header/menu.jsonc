@@ -1,0 +1,14 @@
+{
+    "menu#menu": {
+        "children": [
+            "drawer#mujer",
+            "drawer#hombre",
+            "drawer#colecciones",
+            "drawer#outlet"
+        ],
+        "props": {
+            "type": "category",
+            "blockClass": "SNwBp"
+        }
+    }
+}

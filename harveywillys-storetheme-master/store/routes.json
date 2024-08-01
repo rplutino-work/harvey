@@ -1,0 +1,17 @@
+{
+    "store.custom#faq": {
+        "path": "/preguntas-frecuentes"
+    },
+    "store.custom#cambios": {
+        "path": "/cambios-y-devoluciones"
+    },
+    "store.custom#envios": {
+        "path": "/envios"
+    },
+    "store.custom#pol-privacidad": {
+        "path": "/politica-de-privacidad"
+    },
+    "store.custom#terminos": {
+        "path": "/terminos-y-condiciones"
+    }
+}

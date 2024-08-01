@@ -1,0 +1,267 @@
+{
+    "vtex.menu@2.x:menu#footer-mobile": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "menuFooter"
+        },
+        "children": [
+            "menu-item#ayuda",
+            "menu-item#empresa",
+            "menu-item#contacto",
+            "menu-item#seguinos"
+        ]
+    },
+
+    // ayuda
+    "menu-item#ayuda": {
+        "props": {
+            "blockClass": "firstLevel",
+            "id": "menu-item-ayuda",
+            "type": "custom",
+            "itemProps": {
+            "type": "internal",
+            "href": "/about-us/",
+            "tagTitle": "ayuda",
+            "text": "AYUDA"
+            }
+        },
+        "blocks": ["vtex.menu@2.x:submenu.accordion#ayuda"]
+    },
+        
+    "vtex.menu@2.x:submenu.accordion#ayuda": {
+        "children": ["vtex.menu@2.x:menu#ayuda-accordion"]
+    },
+
+    "vtex.menu@2.x:menu#ayuda-accordion": {
+        "props": {
+            "orientation": "vertical"
+        },
+        "children": [
+            "menu-item#faq-footer",
+            "menu-item#cambios-devoluciones",
+            "menu-item#envios"
+        ]
+    },
+    "menu-item#faq-footer": {
+        "props": {
+            "id": "menu-item-faq",
+            "type": "custom",
+            "itemProps": {
+            "type": "internal",
+            "href": "/preguntas-frecuentes",
+            "tagTitle": "preguntas frecuentes",
+            "text": "Preguntas Frecuentes"
+            }
+        }
+    },
+    "menu-item#cambios-devoluciones": {
+        "props": {
+            "id": "menu-item-cambios-devoluciones",
+            "type": "custom",
+            "itemProps": {
+            "type": "internal",
+            "href": "/cambios-y-devoluciones",
+            "tagTitle": "cambios y devoluciones",
+            "text": "Cambios y devoluciones"
+            }
+        }
+    },
+    "menu-item#envios": {
+        "props": {
+            "id": "menu-item-envios",
+            "type": "custom",
+            "itemProps": {
+            "type": "internal",
+            "href": "/envios",
+            "tagTitle": "envios",
+            "text": "Envíos"
+            }
+        }
+    },
+
+    // empresa
+    "menu-item#empresa": {
+        "props": {
+            "blockClass": "firstLevel",
+            "itemProps": {
+            "tagTitle": "empresa",
+            "text": "EMPRESA"
+            }
+        },
+        "blocks": ["vtex.menu@2.x:submenu.accordion#empresa"]
+        },
+
+    "vtex.menu@2.x:submenu.accordion#empresa": {
+        "children": ["vtex.menu@2.x:menu#footer-empresa"]
+    },
+    "vtex.menu@2.x:menu#footer-empresa": {
+        "props": {
+            "orientation": "vertical"
+        },
+        "children": [
+            "menu-item#politica-privacidad",
+            "menu-item#terminos-condiciones"
+        ]
+    },
+    "menu-item#politica-privacidad": {
+        "props": {
+          "id": "menu-item-politica-privacidad",
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "/politica-de-privacidad",
+            "noFollow": true,
+            "tagTitle": "politica-privacidad",
+            "text": "Política de Privacidad"
+          }
+        }
+      },
+      "menu-item#terminos-condiciones": {
+        "props": {
+          "id": "menu-item-terminos-condiciones",
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "/terminos-y-condiciones",
+            "noFollow": true,
+            "tagTitle": "terminos y condiciones",
+            "text": "Términos y Condiciones"
+          }
+        }
+      },
+    
+    "menu-item#faq": {
+        "props": {
+            "id": "menu-item-faq",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "noFollow": true,
+                "tagTitle": "FAQ",
+                "text": "FAQ"
+            }
+        }
+    },
+
+    // CONTACTO
+    "menu-item#contacto": {
+        "props": {
+            "blockClass": "firstLevel",
+            "itemProps": {
+            "tagTitle": "contacto",
+            "text": "CONTACTO"            }
+        },
+        "blocks": ["vtex.menu@2.x:submenu.accordion#contacto"]
+    },
+    "vtex.menu@2.x:submenu.accordion#contacto": {
+        "children": ["vtex.menu@2.x:menu#footer-contacto"]
+    },
+    "vtex.menu@2.x:menu#footer-contacto": {
+        "props": {
+            "orientation": "vertical"
+        },
+        "children": [
+            "menu-item#store",
+            "menu-item#telefono",
+            "menu-item#correo"
+        ]
+    },
+    "menu-item#store": {
+        "props": {
+            "id": "menu-item-store",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "tagTitle": "Nosotros Store",
+                "text": "Nosotros Store"
+            }
+        }
+    },
+    "menu-item#telefono": {
+        "props": {
+            "id": "menu-item-telefono",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "tagTitle": "telefono",
+                "text": "00 000 000 00"
+            }
+        }
+    },
+    "menu-item#correo": {
+        "props": {
+            "id": "menu-item-correo",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "tagTitle": "correo",
+                "text": "hola@email.com"
+            }
+        }
+    },
+
+    // seguinos
+    "menu-item#seguinos": {
+        "props": {
+            "blockClass": "firstLevel",
+            "itemProps": {
+            "tagTitle": "seguinos",
+            "text": "SEGUINOS"
+            }
+        },
+        "blocks": ["vtex.menu@2.x:submenu.accordion#seguinos"]
+    },
+    "vtex.menu@2.x:submenu.accordion#seguinos": {
+        "children": ["vtex.menu@2.x:menu#footer-seguinos"]
+    },
+    "vtex.menu@2.x:menu#footer-seguinos": {
+        "props": {
+            "orientation": "vertical"
+        },
+        "children": [
+            "menu-item#instagram",
+            "menu-item#facebook",
+            "menu-item#youtube"
+        ]
+    },
+    "menu-item#instagram": {
+        "props": {
+            "id": "menu-item-instagram",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "tagTitle": "instagram marea",
+                "text": "Instagram"
+            }
+        }
+    },
+    "menu-item#facebook": {
+        "props": {
+            "id": "menu-item-facebook",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "tagTitle": "facebook",
+                "text": "facebook"
+            }
+        }
+    },
+    "menu-item#youtube": {
+        "props": {
+            "id": "menu-item-youtube",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "tagTitle": "youtube",
+                "text": "youtube"
+            }
+        }
+    }
+}

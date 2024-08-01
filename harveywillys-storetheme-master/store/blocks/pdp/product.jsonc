@@ -1,0 +1,24 @@
+{ /* desarrollado por Nomada Digital - 04/02/2022 */
+  
+  // TEMPLATE DE LA PAGINA DE PRODUCTOS  - PDP
+
+  /*    Este template esta separado en 6 secciones. Para cada seccion corresponde un archivo en la misma carpeta donde se definen 
+        los bloques respectivos
+  */
+
+  "store.product": {
+    "children": [
+      "breadcrumb#pdp",
+      "condition-layout.product#availability",                   // layout de informacion del producto      --> product-information.jsonc
+      "flex-layout.row#related-products1",          // productos relacionados I           --> primary-related-products.jsonc
+      "flex-layout.row#home--trendingShelf"
+    ]
+  },
+  "breadcrumb#pdp": {
+    "props": {
+      "homeIconSize": 22,
+      "showOnMobile": true
+    }
+  }
+  
+}

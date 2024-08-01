@@ -1,0 +1,55 @@
+
+{
+    // SECCION DE DETALLES DEL PRODUCTO DE LA PAGINA DE PRODUCTOS 
+    "flex-layout.row#desplegables-envios":{
+        "props": {
+            "rowGap": 0,
+            "horizontalAlign": "center",
+            "blockClass": "seccionDesplegable"
+        },
+        "children": ["flex-layout.col#desplegables-envios"],
+        "title": "Metodos de Envios"
+    },
+    "flex-layout.col#desplegables-envios":{
+        "props":{
+            "rowGap": 0
+        },
+        "children":["disclosure-layout#simple-envios"]
+    },
+    "disclosure-layout#simple-envios": {
+        "children": ["disclosure-trigger#simple-envios", "disclosure-content#simple-envios"]
+    },
+    "disclosure-trigger#simple-envios": {
+        "props": {
+            "as": "div",
+            "blockClass": "pdp"
+        },
+        "children": ["rich-text#desplegables-envios", "disclosure-state-indicator#pdp"]
+    },
+    // titulo 
+    "rich-text#desplegables-envios":{
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "LEFT",
+            "text": "Métodos de Envíos",
+            "font": "t-heading-5",
+            "blockClass": "tituloDesplegablePdp"
+        },
+        "title": "Metodos de Envios"
+    },
+    
+    "disclosure-content#simple-envios": {
+        "children": ["rich-text#desplegables-envios-contenido"]
+    },
+    // titulo 
+    "rich-text#desplegables-envios-contenido":{
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "contenido",
+            "font": "t-heading-5",
+            "blockClass": "textoDesplegablePdp"
+        }
+    }
+      
+}

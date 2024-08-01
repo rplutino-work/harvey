@@ -1,0 +1,168 @@
+{
+  "responsive-layout.desktop#carousel-home-top": {
+    "children": [
+      "rich-text#home-top",
+      "flex-layout.row#carousel-home-top"
+    ],
+    "props": {
+      "blockClass": [
+        "carrousel-marca",
+        "carousel-especial-eventos"
+      ]
+    }
+  },
+  "flex-layout.row#carousel-home-top": {
+    "title": "Carrousel Home Eventos",
+    "children": [
+      "flex-layout.col#carousel-home-top-col-1"
+    ],
+    "props": {
+      "blockClass": [
+        "carrousel-marca",
+        "carousel-especial-eventos"
+      ]
+    }
+  },
+  "flex-layout.col#carousel-home-top-col-1": {
+    "children": [
+      "list-context.product-list#vitrina-carrousel-home-top"
+    ],
+    "props": {
+      "width": "100%"
+    }
+  },
+  "flex-layout.col#carousel-home-top-col-2": {
+    "children": [
+      "list-context.image-list#videos-eventos"
+    ],
+    "props": {
+      "width": "39%"
+    }
+  },
+  "responsive-layout.mobile#carousel-home-top": {
+    "children": [
+      "flex-layout.row#carousel-home-top-mobile-row-1"
+    ]
+  },
+  "flex-layout.row#carousel-home-top-mobile-row-1": {
+    "title": "Carrousel Home Eventos",
+    "children": [
+      "rich-text#home-top",
+      "flex-layout.col#carousel-home-top-mobile-row-1-col-1"
+    ],
+    "props": {
+      "props": {
+        "blockClass": "carrousel-marca"
+      }
+    }
+  },
+  "flex-layout.col#carousel-home-top-mobile-row-1-col-1": {
+    "children": [
+      "list-context.product-list#vitrina-carrousel-home-top"
+    ]
+  },
+  "list-context.product-list#carrousel-home-top": {
+    "blocks": [
+      "product-summary.shelf#vitrina-principal"
+    ],
+    "children": [
+      "slider-layout#carrousel-home-top-products"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#carrousel-home-top-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "arrowSize": {
+        "mobile": 14,
+        "desktop": 18
+      },
+      "autoplay": {
+        "timeout": 2500,
+        "stopOnHover": true
+      },
+      "slideTransition": {
+        "speed": 600,
+        "delay": 0,
+        "timing": ""
+      },
+      "navigationStep": 1,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "usePagination": true,
+      "blockClass": "slider-carrousel-eventos"
+    }
+  },
+  "image#marca-3": {
+    "props": {
+      "src": "/arquivos/logo-gif.gif",
+      "blockClass": "img-marca-1"
+    }
+  },
+  "list-context.product-list#vitrina-carrousel-home-top": {
+    "props": {
+      "maxItems": 8
+    },
+    "blocks": [
+      "product-summary.shelf#vitrina-principal"
+    ],
+    "children": [
+      "slider-layout#carrousel-home-top-products"
+    ],
+    "title": "Layout del slider"
+  },
+  "rich-text#home-top": {
+    "props": {
+      "text": "**SUNSETSTRIP** HERNAN CATTANEO",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-5",
+      "blockClass": "titulosHome-Eventos"
+    }
+  },
+  "list-context.image-list#videos-eventos": {
+    "children": ["slider-layout#videos-eventos"],
+    "props": {
+
+
+      "images": [{
+          //   "image": "https://firebasestorage.googleapis.com/v0/b/prueba-81920.appspot.com/o/Cattaneo%20Drop%202%20SST%20HW%20Buena%20opc%202.gif?alt=media",
+          "image": "",
+          "description": "video 1"
+        },
+        {
+          //   "image": "https://firebasestorage.googleapis.com/v0/b/prueba-81920.appspot.com/o/Recap%20Sold%20Out.gif?alt=media",
+          "image": "",
+          "description": "video 2"
+        },
+        {
+          //   "image": "https://firebasestorage.googleapis.com/v0/b/prueba-81920.appspot.com/o/Cattaneo%20Drop%202%20SST%20HW%20Buena%20opc%204.gif?alt=media",
+          "image": "",
+          "description": "video 3"
+        }
+      ]
+    }
+  },
+  "slider-layout#videos-eventos": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 3
+      },
+      "navigationStep": 1,
+      "showNavigationArrows": "never",
+      "infinite": true,
+      "showPaginationDots": "never",
+      "blockClass": "slider-videos"
+    }
+  }
+}

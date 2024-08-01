@@ -1,0 +1,26 @@
+version: '3.7'
+services:
+  vtexnode16:
+    image: goharbor.corebiz.cl/development/vtex:node16
+    stdin_open: true
+    tty: true
+    container_name: vtexnode16
+    networks:
+    - vtexnode16
+    ports:
+    - 8080:6901
+    volumes:
+    - ${HOME}/.corebiz:/home/kasm-user/.corebiz
+    - ${HOME}/.ssh:/home/kasm-user/.ssh
+    - ${HOME}/.gitconfig:/home/kasm-user/.gitconfig
+    - ${HOME}/.vtex:/home/kasm-user/.vtex
+    - ${HOME}/.docker_vscode:/home/kasm-user/.vscode
+    - ${HOME}/.docker_bash_history:/home/kasm-user/.bash_history
+    - ../:/home/kasm-user/My_Projects
+    - type: tmpfs
+      target: /dev/shm
+      tmpfs:
+        size: 512m
+networks:
+  vtexnode16:
+    driver: bridge

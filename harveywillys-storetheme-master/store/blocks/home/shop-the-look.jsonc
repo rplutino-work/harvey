@@ -1,0 +1,179 @@
+{
+    "responsive-layout.desktop#shop-the-loop": {
+        "children": [
+            "rich-text#shop-the-look",
+            "rich-text#shop-the-look-subtittle",
+            "flex-layout.row#shop-the-look"
+        ],
+        "props": {
+            "blockClass": [
+                "carrousel-marca",
+                "carousel-especial-eventos",
+                "slider-shop-the-look"
+            ]
+        }
+    },
+    "flex-layout.row#shop-the-look": {
+        "title": "Vitrina Shop The Look",
+        "children": [
+            "flex-layout.col#shop-the-look"
+        ],
+        "props": {
+            "blockClass": [
+                "carrousel-marca",
+                "carousel-especial-eventos",
+                "slider-shop-the-look"
+            ]
+        }
+    },
+    "flex-layout.col#shop-the-look": {
+        "children": [
+            "list-context.product-list#shop-the-look"
+        ],
+        "props": {
+            "width": "100%"
+        }
+    },
+
+    // "flex-layout.col#shop-the-look-img": {
+    //     "children": [
+    //         "list-context.image-list#videos-eventos"
+    //     ],
+    //     "props": {
+    //         "width": "39%"
+    //     }
+    // },
+    // "list-context.image-list#videos-eventos": {
+    //     "children": [
+    //         "slider-layout#videos-eventos"
+    //     ],
+    //     "props": {
+    //         "images": [
+    //             {
+    //                 "image": "https://firebasestorage.googleapis.com/v0/b/prueba-81920.appspot.com/o/Cattaneo%20Drop%202%20SST%20HW%20Buena%20opc%202.gif?alt=media",
+    //                 "description": "video 1"
+    //             },
+    //             {
+    //                 "image": "https://firebasestorage.googleapis.com/v0/b/prueba-81920.appspot.com/o/Recap%20Sold%20Out.gif?alt=media",
+    //                 "description": "video 2"
+    //             },
+    //             {
+    //                 "image": "https://firebasestorage.googleapis.com/v0/b/prueba-81920.appspot.com/o/Cattaneo%20Drop%202%20SST%20HW%20Buena%20opc%204.gif?alt=media",
+    //                 "description": "video 3"
+    //             }
+    //         ]
+    //     }
+    // },
+    // "slider-layout#videos-eventos": {
+    //     "props": {
+    //         "itemsPerPage": {
+    //             "desktop": 3,
+    //             "tablet": 3,
+    //             "phone": 3
+    //         },
+    //         "navigationStep": 1,
+    //         "showNavigationArrows": "never",
+    //         "infinite": true,
+    //         "showPaginationDots": "never",
+    //         "blockClass": "slider-videos"
+    //     }
+    // },
+
+    "slider-layout#shop-the-look": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 1
+            },
+            "infinite": false,
+            "fullWidth": false,
+            "arrowSize": {
+                "mobile": 14,
+                "desktop": 18
+            },
+            // "autoplay": {
+            //     "timeout": 2500,
+            //     "stopOnHover": true
+            // },
+            // "slideTransition": {
+            //     "speed": 600,
+            //     "delay": 0,
+            //     "timing": ""
+            // },
+            "navigationStep": 1,
+            "showNavigationArrows": "always",
+            "showPaginationDots": "never",
+            "usePagination": true,
+            "blockClass": "slider-shop-the-look"
+        }
+    },
+    "image#marca-3": {
+        "props": {
+            "src": "/arquivos/logo-gif.gif",
+            "blockClass": "img-marca-1"
+        }
+    },
+    "list-context.product-list#shop-the-look": {
+        "props": {
+            "maxItems": 4
+        },
+        "blocks": [
+            "product-summary.shelf#shop-the-look"
+        ],
+        "children": [
+            "slider-layout#shop-the-look"
+        ],
+        "title": "Layout del slider"
+    },
+    "rich-text#shop-the-look": {
+        "props": {
+            "text": "Shop the look",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "font": "t-heading-5",
+            "blockClass": "titulosHome-Eventos"
+        }
+    },
+    "rich-text#shop-the-look-subtittle": {
+        "props": {
+            "text": "Shop the look subtitle",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "font": "t-heading-5",
+            "blockClass": "shop-the-look-subtittle"
+        }
+    },
+    
+    "product-summary.shelf#shop-the-look": {
+        "children": [
+            "stack-layout#vitrina"
+        ]
+    },
+    "responsive-layout.mobile#shop-the-loop": {
+        "children": [
+            "rich-text#shop-the-look",
+            "rich-text#shop-the-look-subtittle",
+            "flex-layout.row#shop-the-look"
+        ],
+        "props": {
+            "blockClass": [
+                "carrousel-marca",
+                "carousel-especial-eventos",
+                "slider-shop-the-look"
+            ]
+        }
+    },
+    "slider-layout#videos-eventos-mobile": {
+        "props": {
+            "itemsPerPage": {
+                "phone": 1
+            },
+            "navigationStep": 1,
+            "showNavigationArrows": "mobileOnly",
+            "infinite": true,
+            "showPaginationDots": "mobileOnly",
+            "blockClass": "slider-videos-mobile"
+        }
+    }
+}

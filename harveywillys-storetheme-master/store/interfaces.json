@@ -1,0 +1,46 @@
+{
+  "countdown": {
+    "component": "Countdown"
+  },
+  "video-home-carousel": {
+    "component": "VideoHomeCarousel"
+  },
+  "pdp-vimeo-video": {
+    "component": "PDPVimeoVideo"
+  },
+  "gender-selector": {
+    "component": "GenderSelector"
+  },
+  "pre-header": {
+    "component": "PreHeader"
+  },
+  "category-name-plp": {
+    "component": "CategoryNamePLP"
+  },
+  "no-index": {
+    "component": "NoIndex"
+  },
+  "barra-promociones": {
+    "component": "AdsBar"
+  },
+  "free-shipping-bar": {
+    "component": "FreeShippingBar",
+    "composition": "children"
+  },
+  "banner-custom-home": {
+    "component": "BannerCustomHome"
+  },
+  "portal": {
+    "component": "Portal",
+    "composition": "children"
+  },
+  "cucardas": {
+    "component": "Cucardas"
+  },
+  "Video-uploader": {
+    "component": "VideoUploader"
+  },
+  "email-mkt": {
+    "component": "EmailMkt"
+  }
+}

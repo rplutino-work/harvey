@@ -1,0 +1,73 @@
+{
+  // SECCION DE DEVOLUCIONES 
+  //-- LAYOUT - TEXTO DE CONDICIONES DE DEVOLUCIONES
+  "flex-layout.row#devoluciones":{
+    "props": {
+        "rowGap": 0,
+        "horizontalAlign": "center",
+        "blockClass": "seccionDesplegable"
+    },
+    "children":["flex-layout.col#fila-devoluciones"],
+    "title": "Devoluciones"
+  },
+  // separa el layout en dos filas: TITULO Y CONTENIDO
+  "flex-layout.col#fila-devoluciones":{
+    "props":{
+        "rowGap": 1
+        // "blockClass": "colDevoluciones"
+    },
+    "children": [
+      "disclosure-layout#simple-devoluciones"
+    ]
+  },
+  "disclosure-layout#simple-devoluciones": {
+    "children": ["disclosure-trigger#simple-devoluciones", "disclosure-content#simple-devoluciones"]
+  },
+  "disclosure-trigger#simple-devoluciones": {
+    "props": {
+      "as": "div",
+      "blockClass": "pdp"
+    },
+    "children": ["rich-text#titulo-devoluciones", "disclosure-state-indicator#pdp"]
+  },
+  // titulo de condiciones de devoluciones
+  "rich-text#titulo-devoluciones":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "Devoluciones",
+      "font": "t-heading-5",
+      "blockClass": "tituloDesplegablePdp"
+    },
+    "title": "Devoluciones"
+  },
+  "disclosure-state-indicator#pdp": {
+    "props": {
+      "Show": "icon-caret#down",
+      "Hide": "icon-caret#up"
+    }
+  },
+  "icon-caret#down": {
+    "props": {
+      "orientation": "down"
+    }
+  },
+  "icon-caret#up": {
+    "props": {
+      "orientation": "up"
+    }
+  },
+  "disclosure-content#simple-devoluciones": {
+    "children": ["rich-text#devoluciones"]
+  },
+  // texto de condiciones de devoluciones
+  "rich-text#devoluciones":{
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Cras hendrerit pulvinar sapien et egestas. Mauris sapien turpis, tempus eu elit vel, euismod auctor mi. Curabitur auctor risus et mi vulputate pellentesque. Vivamus sit amet lorem nulla. Nam non tortor id nibh fermentum commodo quis vel leo. Vivamus pulvinar libero nulla, sit amet mollis felis lobortis non. Duis varius eros quis justo iaculis lobortis. Phasellus consequat semper orci nec maximus. Mauris dictum.  ",
+      "font": "t-heading-6",
+      "blockClass": "textoDesplegablePdp"
+    }
+  }
+}

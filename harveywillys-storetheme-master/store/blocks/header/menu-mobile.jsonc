@@ -1,0 +1,92 @@
+{
+    "drawer#moblie": {
+      "props": {
+          "maxWidth": "75%",
+          "blockClass": "menuMob"
+        },
+      "children": ["menu#principal"],
+      "blocks": ["drawer-header#drawer"]
+    },
+    //--- DRAWER ANTERIOR
+    "drawer-header#drawer": {
+      "children": ["image#logo-harvey-menu","drawer-close-button"]
+    },
+    "image#logo-harvey-menu": {
+        "props": {
+            "src": "/arquivos/logo-hw-black-200x77.png",
+            "maxWidth": 70
+        }        
+    },
+    "image#return": {
+        "props": {
+            "src": "/arquivos/nav-arrow-left.svg",
+            "maxHeight": 14,
+            "blockClass": "icoReturnDraweMobile"
+        }        
+    },
+    // menu principal
+    "menu#principal": {
+      "children": [
+        "drawer#colecciones",
+        "drawer#hombre",
+        "drawer#mujer",
+        "drawer#outlet",
+        "menu-item#home",
+        "menu-item#sunsetstrip",
+        "menu-item#profile"
+      ],
+      "props": {
+        "orientation": "vertical",
+        "blockClass": "menuMob"
+      },
+      "title": "menu mob"
+    },
+    // home
+    "menu-item#home": {
+        "props": {
+            "id": "menu-item-home",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+            "type": "internal",
+            "href": "/home",
+            "tagTitle": "home",
+            "text": "HOME"
+            },
+            "blockClass": "itemFirstMenuMob"
+          }
+        },
+    // mi cuenta
+    "menu-item#profile": {
+      "props": {
+          "id": "menu-item-perfil",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+          "type": "internal",
+          "href": "/account",
+          "tagTitle": "perfil",
+          "text": "MI CUENTA",
+          "iconProps": {
+            "id": "hpa-profile"
+          }
+          },
+          "blockClass": "itemLoginMob"
+        }
+      },
+      //NUEVO MENU SUNSETSTRIP
+      "menu-item#sunsetstrip": {
+        "props": {
+            "id": "menu-item-sunsetstrip",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+            "type": "internal",
+            "href": "/140?map=productClusterIds",
+            "tagTitle": "Sunsetstrip",
+            "text": "Sunsetstrip"
+            },
+            "blockClass": "itemFirstMenuMob"
+          }
+        }
+  }

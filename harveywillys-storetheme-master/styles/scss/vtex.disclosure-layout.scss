@@ -1,0 +1,25 @@
+.trigger--bloqueFaq,
+.trigger--pdp {
+    display: flex;
+    align-items: first baseline;
+    cursor: pointer;
+    outline: none;
+    justify-content: space-between;
+    padding-right: .5rem;
+}
+.trigger--bloqueFaq{
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top: 1px solid #e2e2e2;
+}
+@media (min-width: 768px){
+    .trigger--pdp{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+@media (max-width: 768px){
+    .trigger--pdp{
+        padding: 12px 0;
+    }
+}

@@ -1,0 +1,930 @@
+{
+  // colecciones
+  "drawer#colecciones": {
+    "props": {
+      "maxWidth": "75%",
+      "blockClass": "menuMobContent"
+    },
+    "children": ["menu#colecciones"],
+    "blocks": ["drawer-trigger#colecciones", "drawer-header#menu"]
+  },
+  "drawer-trigger#colecciones": {
+    "children": ["rich-text#colecciones"]
+  },
+  "rich-text#colecciones": {
+    "props": {
+      "text": "colecciones",
+      "blockClass": "itemFirstDrawer"
+    }
+  },
+  "drawer-header#menu": {
+    "children": ["image#return", "drawer-close-button#menu"]
+  },
+  "drawer-close-button#menu": {
+    "props": {
+      "text": "MENU"
+    }
+  },
+  "menu#colecciones": {
+    "children": [
+      "rich-text#colecciones-titulo",
+      "drawer#colecciones-tops",
+      "drawer#colecciones-bottoms",
+      "drawer#colecciones-accesorios",
+      "menu-item#colecciones-ver-todo"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menuMob"
+    }
+  },
+  "rich-text#colecciones-titulo": {
+    "props": {
+      "text": "COLECCIONES",
+      "blockClass": "drawerTituloMobile"
+    }
+  },
+  // colecciones-tops
+  "drawer#colecciones-tops": {
+    "props": {
+      "maxWidth": "75%",
+      "blockClass": "menuMobContent"
+    },
+    "children": ["menu#colecciones-tops"],
+    "blocks": ["drawer-trigger#tops", "drawer-header#colecciones"]
+  },
+  "drawer-trigger#tops": {
+    "children": ["rich-text#tops"]
+  },
+  "rich-text#tops": {
+    "props": {
+      "text": "tops | arriba",
+      "blockClass": "itemFirstDrawer"
+    }
+  },
+  "drawer-header#colecciones": {
+    "children": ["image#return", "drawer-close-button#colecciones"]
+  },
+  "drawer-close-button#colecciones": {
+    "props": {
+      "text": "COLECCIONES"
+    }
+  },
+  "menu#colecciones-tops": {
+    "children": [
+      "rich-text#tops-titulo",
+      "menu-item#colecciones-remeras",
+      "menu-item#colecciones-camisas",
+      "menu-item#colecciones-buzos",
+      "menu-item#colecciones-sweater",
+      "menu-item#colecciones-camperas",
+      "menu-item#colecciones-vestidos",
+      "menu-item#colecciones-tapados",
+      "menu-item#colecciones-tops-ver-todo"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menuMob"
+    }
+  },
+  "rich-text#tops-titulo": {
+    "props": {
+      "text": "tops | arriba",
+      "blockClass": "drawerTituloMobile"
+    }
+  },
+  "menu-item#colecciones-vestidos": {
+    "props": {
+      "id": "menu-item-vestidos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/vestido",
+        "text": "vestidos"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#colecciones-remeras": {
+    "props": {
+      "id": "menu-item-remeras",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba/remeras",
+        "text": "remeras"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#colecciones-camisas": {
+    "props": {
+      "id": "menu-item-colecciones-camisas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba/camisas",
+        "text": "camisas"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#colecciones-buzos": {
+    "props": {
+      "id": "menu-item-colecciones-buzos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba/buzos",
+        "text": "buzos"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#colecciones-sweater": {
+    "props": {
+      "id": "menu-item-colecciones-sweater",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba/sweaters",
+        "text": "sweaters"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#colecciones-camperas": {
+    "props": {
+      "id": "menu-item-colecciones-camperas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba/camperas",
+        "text": "camperas"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#colecciones-tapados": {
+    "props": {
+      "id": "menu-item-colecciones-tapados",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba/tapados---blazers",
+        "text": "tapados & blazers"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#colecciones-tops-ver-todo": {
+    "props": {
+      "id": "menu-item-tops",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba",
+        "text": "ver todo"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  // colecciones-bottoms
+  "drawer#colecciones-bottoms": {
+    "props": {
+      "maxWidth": "75%",
+      "blockClass": "menuMobContent"
+    },
+    "children": ["menu#colecciones-bottoms"],
+    "blocks": ["drawer-trigger#bottoms", "drawer-header#colecciones"]
+  },
+  "drawer-trigger#bottoms": {
+    "children": ["rich-text#bottoms"]
+  },
+  "rich-text#bottoms": {
+    "props": {
+      "text": "bottoms | abajo",
+      "blockClass": "itemFirstDrawer"
+    }
+  },
+  "menu#colecciones-bottoms": {
+    "children": [
+      "rich-text#bottoms-titulo",
+      "menu-item#colecciones-jeans",
+      "menu-item#colecciones-pantalones",
+      "menu-item#colecciones-joggers",
+      "menu-item#colecciones-shorts",
+      "menu-item#colecciones-polleras",
+      "menu-item#colecciones-mallas",
+      "menu-item#colecciones-bikinis",
+      "menu-item#colecciones-boxers",
+      "menu-item#colecciones-bottoms-ver-todo"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menuMob"
+    }
+  },
+  "rich-text#bottoms-titulo": {
+    "props": {
+      "text": "bottoms | abajo",
+      "blockClass": "drawerTituloMobile"
+    }
+  },
+  "menu-item#colecciones-jeans": {
+    "props": {
+      "id": "menu-item-colecciones-jeans",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/jeans",
+        "text": "jeans"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#colecciones-pantalones": {
+    "props": {
+      "id": "menu-item-colecciones-pantalones",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/pantalones",
+        "text": "pantalones"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#colecciones-joggers": {
+    "props": {
+      "id": "menu-item-colecciones-joggers",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/joggers",
+        "text": "joggers"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#colecciones-shorts": {
+    "props": {
+      "id": "menu-item-colecciones-shorts",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/shorts",
+        "text": "shorts"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#colecciones-polleras": {
+    "props": {
+      "id": "menu-item-colecciones-polleras-faldas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/polleras---faldas",
+        "text": "polleras & faldas"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#colecciones-mallas": {
+    "props": {
+      "id": "menu-item-colecciones-mallas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/mallas",
+        "text": "mallas"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#colecciones-bikinis": {
+    "props": {
+      "id": "menu-item-colecciones-mallas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/ropa-interior",
+        "text": "ropa interior"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#colecciones-boxers": {
+    "props": {
+      "id": "menu-item-colecciones-boxers",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/boxers",
+        "text": "boxers"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#colecciones-bottoms-ver-todo": {
+    "props": {
+      "id": "menu-item-bottoms",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo",
+        "text": "ver todo"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  // colecciones-accesorios
+  "drawer#colecciones-accesorios": {
+    "props": {
+      "maxWidth": "75%",
+      "blockClass": "menuMobContent"
+    },
+    "children": ["menu#colecciones-accesorios"],
+    "blocks": ["drawer-trigger#accesorios", "drawer-header#colecciones"]
+  },
+  "drawer-trigger#accesorios": {
+    "children": ["rich-text#accesorios"]
+  },
+  "rich-text#accesorios": {
+    "props": {
+      "text": "accesorios",
+      "blockClass": "itemFirstDrawer"
+    }
+  },
+  "menu#colecciones-accesorios": {
+    "children": [
+      "rich-text#accesorios-titulo",
+      "menu-item#colecciones-joyeria",
+      "menu-item#colecciones-cinturones",
+      "menu-item#colecciones-gorras",
+      "menu-item#colecciones-medias",
+      "menu-item#colecciones-bolsos",
+      "menu-item#colecciones-gafas",
+      "menu-item#colecciones-bandanas",
+      "menu-item#colecciones-billeteras",
+      "menu-item#colecciones-bufandas",
+      "menu-item#colecciones-zapatillas",
+      "menu-item#colecciones-accesorios-ver-todo"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menuMob"
+    }
+  },
+  "rich-text#accesorios-titulo": {
+    "props": {
+      "text": "accesorios",
+      "blockClass": "drawerTituloMobile"
+    }
+  },
+  "menu-item#colecciones-joyeria": {
+    "props": {
+      "id": "menu-item-colecciones-joyeria",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/joyeria",
+        "text": "joyeria"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#colecciones-cinturones": {
+    "props": {
+      "id": "menu-item-colecciones-cinturones",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/cinturones",
+        "text": "cinturones"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#colecciones-gorras": {
+    "props": {
+      "id": "menu-item-colecciones-gorras",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/gorras",
+        "text": "gorras"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#colecciones-medias": {
+    "props": {
+      "id": "menu-item-colecciones-medias",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/medias",
+        "text": "medias"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#colecciones-bolsos": {
+    "props": {
+      "id": "menu-item-colecciones-bolsos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/bolsos",
+        "text": "bolsos"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#colecciones-gafas": {
+    "props": {
+      "id": "menu-item-colecciones-gafas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/gafas",
+        "text": "gafas"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#colecciones-bandanas": {
+    "props": {
+      "id": "menu-item-colecciones-bandanas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/bandanas",
+        "text": "bandanas"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#colecciones-billeteras": {
+    "props": {
+      "id": "menu-item-colecciones-billeteras",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/billeteras",
+        "text": "billeteras"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#colecciones-bufandas": {
+    "props": {
+      "id": "menu-item-colecciones-bufandas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/bufandas",
+        "text": "bufandas"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#colecciones-zapatillas": {
+    "props": {
+      "id": "menu-item-colecciones-zapatillas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/zapatillas",
+        "text": "zapatillas"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#colecciones-accesorios-ver-todo": {
+    "props": {
+      "id": "menu-item-accesorios",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios",
+        "text": "ver todo"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  // colecciones TODO
+  "menu-item#colecciones-ver-todo": {
+    "props": {
+      "id": "menu-item-colecciones",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa",
+        "text": "ver todo"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  //MENU DESKTOP SUB MENU HIJO
+  //NEW COLLECTION TOPS
+  "menu-item#colecciones-vestidos-desktop": {
+    "props": {
+      "id": "menu-item-vestidos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/vestido",
+        "text": "vestidos"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#colecciones-remeras-desktop": {
+    "props": {
+      "id": "menu-item-remeras",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba/remeras",
+        "text": "remeras"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#colecciones-camisas-desktop": {
+    "props": {
+      "id": "menu-item-colecciones-camisas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba/camisas",
+        "text": "camisas"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#colecciones-buzos-desktop": {
+    "props": {
+      "id": "menu-item-colecciones-buzos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba/buzos",
+        "text": "buzos"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#colecciones-sweater-desktop": {
+    "props": {
+      "id": "menu-item-colecciones-sweater",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba/sweaters",
+        "text": "sweaters"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#colecciones-camperas-desktop": {
+    "props": {
+      "id": "menu-item-colecciones-camperas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba/camperas",
+        "text": "camperas"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#colecciones-tapados-desktop": {
+    "props": {
+      "id": "menu-item-colecciones-tapados",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba/tapados---blazers",
+        "text": "tapados & blazers"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#colecciones-tops-ver-todo-desktop": {
+    "props": {
+      "id": "menu-item-tops",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba",
+        "text": "ver todo"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  //BOTTOMS
+  "menu-item#colecciones-jeans-desktop": {
+    "props": {
+      "id": "menu-item-colecciones-jeans",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/jeans",
+        "text": "jeans"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#colecciones-pantalones-desktop": {
+    "props": {
+      "id": "menu-item-colecciones-pantalones",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/pantalones",
+        "text": "pantalones"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#colecciones-joggers-desktop": {
+    "props": {
+      "id": "menu-item-colecciones-joggers",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/joggers",
+        "text": "joggers"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#colecciones-shorts-desktop": {
+    "props": {
+      "id": "menu-item-colecciones-shorts",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/shorts",
+        "text": "shorts"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#colecciones-polleras-desktop": {
+    "props": {
+      "id": "menu-item-colecciones-polleras-faldas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/polleras---faldas",
+        "text": "polleras & faldas"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#colecciones-mallas-desktop": {
+    "props": {
+      "id": "menu-item-colecciones-mallas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/mallas",
+        "text": "mallas"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#colecciones-bikinis-desktop": {
+    "props": {
+      "id": "menu-item-colecciones-mallas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/ropa-interior",
+        "text": "ropa interior"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#colecciones-boxers-desktop": {
+    "props": {
+      "id": "menu-item-colecciones-boxers",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/boxers",
+        "text": "boxers"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#colecciones-bottoms-ver-todo-desktop": {
+    "props": {
+      "id": "menu-item-bottoms",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo",
+        "text": "ver todo"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  //ACCESORIOS
+  "menu-item#colecciones-joyeria-desktop": {
+    "props": {
+      "id": "menu-item-colecciones-joyeria",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/joyeria",
+        "text": "joyeria"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#colecciones-cinturones-desktop": {
+    "props": {
+      "id": "menu-item-colecciones-cinturones",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/cinturones",
+        "text": "cinturones"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#colecciones-gorras-desktop": {
+    "props": {
+      "id": "menu-item-colecciones-gorras",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/gorras",
+        "text": "gorras"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#colecciones-medias-desktop": {
+    "props": {
+      "id": "menu-item-colecciones-medias",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/medias",
+        "text": "medias"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#colecciones-bolsos-desktop": {
+    "props": {
+      "id": "menu-item-colecciones-bolsos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/bolsos",
+        "text": "bolsos"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#colecciones-gafas-desktop": {
+    "props": {
+      "id": "menu-item-colecciones-gafas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/gafas",
+        "text": "gafas"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#colecciones-bandanas-desktop": {
+    "props": {
+      "id": "menu-item-colecciones-bandanas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/bandanas",
+        "text": "bandanas"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#colecciones-billeteras-desktop": {
+    "props": {
+      "id": "menu-item-colecciones-billeteras",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/billeteras",
+        "text": "billeteras"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#colecciones-bufandas-desktop": {
+    "props": {
+      "id": "menu-item-colecciones-bufandas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/bufandas",
+        "text": "bufandas"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#colecciones-zapatillas-desktop": {
+    "props": {
+      "id": "menu-item-colecciones-zapatillas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/zapatillas",
+        "text": "zapatillas"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#colecciones-accesorios-ver-todo-desktop": {
+    "props": {
+      "id": "menu-item-accesorios",
+      "type": "custom",
+      "highlight": false,
+      "isActive": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios",
+        "text": "ver todo"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item": {}
+}

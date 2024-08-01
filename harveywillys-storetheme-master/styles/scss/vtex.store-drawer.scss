@@ -1,0 +1,84 @@
+.childrenContainer--drawerFiltrosDesktop {
+  padding: 1rem 2rem;
+}
+
+.drawerContent--drawerFiltrosDesktop {
+  padding: 0;
+}
+
+.drawerContent--drawerFiltrosDesktop .drawerHeader {
+  padding: 0.25rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.openIconContainer--drawerFiltrosDesktop .drawerTriggerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.drawer--menuMob {
+  z-index: 999999;
+}
+
+.drawer--menuMob .drawerHeader {
+  padding: 1rem 1.5rem 1rem 3rem;
+  border-bottom: 1px solid #e3e3e3;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drawerContent--menuMobContent .drawerHeader {
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid #e3e3e3;
+  align-items: center;
+}
+
+.openIconContainer--menuMob {
+  margin: auto;
+}
+
+.openIconContainer--menuMobContent {
+  padding: 0px;
+}
+
+.closeIconButton {
+  color: gray;
+  font-family: 'Poppins';
+}
+
+.drawer--menuMobContent .closeIconButton {
+  padding-left: 0px;
+}
+
+.childrenContainer--menu-container-hijo {
+  height: 75vh;
+}
+
+.drawerContent--menu-container-hijo:hover {
+  pointer-events: auto;
+  transform: translate3d(0%, 0px, 0px);
+}
+
+:global(.vtex-store-drawer-0-x-drawerContent--menu-container-hijo) {
+  &:hover {
+    :global(.vtex-store-drawer-0-x-opened--menu-container-hijo) {
+      pointer-events: auto;
+      transform: translate3d(0%, 0px, 0px);
+    }
+  }
+}
+
+.drawer--menu-container-hijo {
+  z-index: 99999999;
+}
+
+:global(.vtex-store-drawer-0-x-opened--menuMobContent) {
+  z-index: 999999999;
+}
+
+:global(.vtex-store-drawer-0-x-opened--drawerFiltrosDesktop) {
+  z-index: 9999;
+}

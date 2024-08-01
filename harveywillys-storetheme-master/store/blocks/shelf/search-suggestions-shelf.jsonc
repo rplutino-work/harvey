@@ -1,0 +1,76 @@
+{
+    "product-summary.shelf#search-suggestions-shelf": {
+        "children": [
+            "flex-layout.row#search-suggestions-shelf--wrapper"
+        ],
+        "props": {
+            "blockClass": "searchSuggestionsShelf"
+        }
+    },
+    "flex-layout.row#search-suggestions-shelf--wrapper": {
+        "children": [
+            "flex-layout.col#search-suggestions-shelf--img",
+            "flex-layout.col#search-suggestions-shelf--info"
+        ],
+        "props": {
+            "fullWidth": true,
+            "colSizing": "auto",
+            "preserveLayoutOnMobile": true,
+            "blockClass": "searchSuggestionsShelf__wrapper"
+        }
+    },
+    "flex-layout.col#search-suggestions-shelf--img": {
+        "children": [
+            "product-summary-image#search-suggestions-shelf"
+        ],
+        "props": {
+            "blockClass": "searchSuggestionsShelf__img"
+        }
+    },
+    "product-summary-image#search-suggestions-shelf": {
+        "props": {
+            "showBadge": false,
+            "width": "200",
+            "height": "200",
+            "aspectRatio": "1:1",
+            "blockClass": "searchSuggestionsShelf__img"
+        }
+    },
+    "flex-layout.col#search-suggestions-shelf--info": {
+        "children": [
+            "product-summary-name",
+            "flex-layout.row#main-shelf--product-price",
+            "product-price-savings#main-shelf"
+        ],
+        "props": {
+            "blockClass": "searchSuggestionsShelf__info"
+        }
+    },
+    "flex-layout.row#main-shelf--product-price": {
+        "children": [
+            "product-list-price#main-shelf",
+            "product-selling-price#main-shelf"
+        ],
+        "props": {
+            "blockClass": "mainShelf__prices",
+            "colSizing": "auto"
+        }
+    },
+    "product-list-price#main-shelf": {
+        "props": {
+            "blockClass": "mainShelf__listPrice"
+        }
+    },
+    "product-selling-price#main-shelf": {
+        "props": {
+            "blockClass": "mainShelf__sellingPrice"
+        }
+    },
+    "product-price-savings#main-shelf": {
+        "props": {
+            "percentageStyle": "compact",
+            "message": "{savingsPercentage} OFF",
+            "blockClass": "mainShelf__discount"
+        }
+    }
+}

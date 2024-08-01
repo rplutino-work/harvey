@@ -1,0 +1,150 @@
+{
+  // seccion de newsletter
+  // DESKTOP
+  "responsive-layout.desktop#newsletter": {
+    "children": [
+      "flex-layout.row#newsletter"
+      //"modal-trigger#neswletter-popup"
+    ]
+  },
+  "flex-layout.row#newsletter": {
+    "props": {
+      "colGap": 7,
+      "blockClass": "rowNewsletter"
+    },
+    "children": [
+      "flex-layout.col#newsletter"
+    ]
+  },
+  "flex-layout.col#newsletter": {
+    "props": {
+      "blockClass": "",
+      "colSizing": "auto",
+      "fullWidth": false,
+      "horizontalAlign": "left",
+      "preserveLayoutOnMobile": false,
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": false
+    },
+    "children": [
+      "rich-text#newsletter",
+      "newsletter-form#mobile"
+    ]
+  },
+  "rich-text#newsletter": {
+    "props": {
+      "title": "Pop Up Neswletter",
+      "font": "t-heading-3",
+      "textPosition": "RIGHT",
+      "text": "SUSCRIBITE AL NEWSLETTER",
+      "blockClass": "titleNewsletter"
+    }
+  },
+  "newsletter-form": {
+    "children": [
+      "newsletter-input-email",
+      "newsletter-submit"
+    ]
+  },
+  "newsletter-submit": {
+    "props": {
+      "submitButtonLabel": "ENVIAR"
+    }
+  },
+  "newsletter-input-email": {
+    "props": {
+      "placeholderText": "Ingresá tu email",
+      "blockClass": "emailNewsletter"
+    }
+  },
+  // MOBILE
+  "responsive-layout.mobile#newsletter": {
+    "children": [
+      "flex-layout.row#newsletter-mobile"
+    ]
+  },
+  "flex-layout.row#newsletter-mobile": {
+    "props": {
+      "marginTop": 4,
+      "marginBottom": 5,
+      "blockClass": "rowNewsletterMob"
+    },
+    "children": [
+      "flex-layout.col#newsletter-mobile"
+    ]
+  },
+  "flex-layout.col#newsletter-mobile": {
+    "children": [
+      "rich-text#newsletter-mob",
+      "newsletter-form#mobile"
+    ],
+    "props": {
+      "blockClass": "newsletterMob_wrapper"
+    }
+  },
+  "rich-text#newsletter-mob": {
+    "props": {
+      "font": "t-heading-5",
+      "textPosition": "CENTER",
+      "text": "Suscribite a nuestro **Newsletter**",
+      "blockClass": "titleNewsletterMob"
+    }
+  },
+  "newsletter-form#mobile": {
+    "props": {
+      "blockClass": "newsletterMob"
+    },
+    "children": [
+      "newsletter-input-email",
+      "newsletter-submit"
+    ]
+  },
+  //POP UP NEWSLETTER 
+  "modal-trigger#neswletter-popup": {
+    "children": [
+      "rich-text#newsletter",
+      "modal-layout#neswletter-popup"
+    ],
+    "props": {
+      "title": "Pop Up Neswletter",
+      "blockClass": "newletter-footer-popup"
+    }
+  },
+  "modal-layout#neswletter-popup": {
+    "children": [
+      "rich-text#newsletter-popup-title",
+      "image#newsletter-image-popup",
+      "newsletter-form",
+      "rich-text#newsletter-popup-subtitle"
+    ],
+    "props": {
+      "blockClass": "newletter-footer-popup"
+    }
+  },
+  "image#newsletter-image-popup": {
+    "props": {
+      "src": "https://nodocios.com.ar/wp-content/uploads/buzios.jpg",
+      "alt": "Image",
+      "maxWidth": "600px",
+      "maxHeight": "250px",
+      "objectFit": "contain",
+      "blockClass": "image-newletter-footer-popup"
+    }
+  },
+  "rich-text#newsletter-popup-title": {
+    "props": {
+      "font": "t-heading-5",
+      "textPosition": "CENTER",
+      "text": "¡Recibí las mejores ofertas y novedades!",
+      "blockClass": "titleNewsletterMob"
+    }
+  },
+  "rich-text#newsletter-popup-subtitle": {
+    "props": {
+      "font": "t-heading-5",
+      "textPosition": "CENTER",
+      "text": "SUSCRIBITE AL NEWSLETTER",
+      "blockClass": "titleNewsletterMob"
+    }
+  }
+}

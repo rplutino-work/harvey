@@ -1,0 +1,422 @@
+{
+    // outlet
+    "drawer#outlet": {
+        "props": {
+            "maxWidth": "75%",
+            "blockClass": "menuMobContent"
+        },
+        "children": [
+            "menu#outlet"
+        ],
+        "blocks": [
+            "drawer-trigger#outlet",
+            "drawer-header#menu"
+        ]
+    },
+    "drawer-trigger#outlet": {
+        "children": [
+            "rich-text#outlet"
+        ]
+    },
+    "rich-text#outlet": {
+        "props": {
+            "text": "Otras Temporadas",
+            "blockClass": "itemFirstDrawer"
+        }
+    },
+    "menu#outlet": {
+        "children": [
+            "rich-text#outlet-titulo",
+            "menu-item#outlet-remeras",
+            "menu-item#outlet-camisas",
+            "menu-item#outlet-buzos",
+            "menu-item#outlet-sweater",
+            "menu-item#outlet-camperas",
+            "menu-item#outlet-jeans",
+            "menu-item#outlet-pantalones",
+            "menu-item#outlet-joggers",
+            "menu-item#outlet-shorts",
+            "menu-item#outlet-mallas",
+            "menu-item#outlet-bikinis",
+            "menu-item#outlet-accesorios",
+            "menu-item#outlet-ver-todo"
+        ],
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "menuMob"
+        }
+    },
+    "rich-text#outlet-titulo": {
+        "props": {
+            "text": "Otras Temporadas",
+            "blockClass": "drawerTituloMobile"
+        }
+    },
+    "menu-item#outlet-remeras": {
+        "props": {
+            "id": "menu-item-outlet-remeras",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/outlet/remeras",
+                "tagTitle": "outlet-remeras",
+                "text": "remeras"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#outlet-camisas": {
+        "props": {
+            "id": "menu-item-outlet-camisas",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/outlet/camisas",
+                "tagTitle": "outlet-camisas",
+                "text": "camisas"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#outlet-buzos": {
+        "props": {
+            "id": "menu-item-outlet-buzos",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/outlet/buzos",
+                "tagTitle": "outlet-buzos",
+                "text": "buzos"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#outlet-sweater": {
+        "props": {
+            "id": "menu-item-outlet-sweater",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/outlet/sweater",
+                "tagTitle": "outlet-sweater",
+                "text": "sweater"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#outlet-camperas": {
+        "props": {
+            "id": "menu-item-outlet-camperas",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/outlet/camperas",
+                "tagTitle": "outlet-camperas",
+                "text": "camperas"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#outlet-jeans": {
+        "props": {
+            "id": "menu-item-outlet-jeans",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/outlet/jeans",
+                "tagTitle": "outlet-jeans",
+                "text": "jeans"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#outlet-pantalones": {
+        "props": {
+            "id": "menu-item-outlet-pantalones",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/outlet/pantalones",
+                "tagTitle": "outlet-pantalones",
+                "text": "pantalones"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#outlet-joggers": {
+        "props": {
+            "id": "menu-item-outlet-joggers",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/outlet/joggers",
+                "tagTitle": "outlet-joggers",
+                "text": "joggers"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#outlet-shorts": {
+        "props": {
+            "id": "menu-item-outlet-shorts",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/outlet/shorts",
+                "tagTitle": "outlet-shorts",
+                "text": "shorts"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#outlet-mallas": {
+        "props": {
+            "id": "menu-item-outlet-mallas",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/outlet/mallas",
+                "tagTitle": "outlet-mallas",
+                "text": "mallas"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#outlet-bikinis": {
+        "props": {
+            "id": "menu-item-outlet-bikinis",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/outlet/bikinis",
+                "tagTitle": "outlet-bikinis",
+                "text": "bikinis"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#outlet-accesorios": {
+        "props": {
+            "id": "menu-item-outlet-accesorios",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/outlet/accesorios",
+                "tagTitle": "outlet-accesorios",
+                "text": "accesorios"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    // todo outlet
+    "menu-item#outlet-ver-todo": {
+        "props": {
+            "id": "menu-item-outlet",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/outlet",
+                "tagTitle": "Otras Temporadas",
+                "text": "ver todo"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    //OULET DESKTOP 
+    "menu-item#outlet-remeras-desktop": {
+        "props": {
+            "id": "menu-item-outlet-remeras",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/outlet/remeras",
+                "tagTitle": "outlet-remeras",
+                "text": "remeras"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#outlet-camisas-desktop": {
+        "props": {
+            "id": "menu-item-outlet-camisas",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/outlet/camisas",
+                "tagTitle": "outlet-camisas",
+                "text": "camisas"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#outlet-buzos-desktop": {
+        "props": {
+            "id": "menu-item-outlet-buzos",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/outlet/buzos",
+                "tagTitle": "outlet-buzos",
+                "text": "buzos"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#outlet-sweater-desktop": {
+        "props": {
+            "id": "menu-item-outlet-sweater",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/outlet/sweater",
+                "tagTitle": "outlet-sweater",
+                "text": "sweater"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#outlet-camperas-desktop": {
+        "props": {
+            "id": "menu-item-outlet-camperas",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/outlet/camperas",
+                "tagTitle": "outlet-camperas",
+                "text": "camperas"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#outlet-jeans-desktop": {
+        "props": {
+            "id": "menu-item-outlet-jeans",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/outlet/jeans",
+                "tagTitle": "outlet-jeans",
+                "text": "jeans"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#outlet-pantalones-desktop": {
+        "props": {
+            "id": "menu-item-outlet-pantalones",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/outlet/pantalones",
+                "tagTitle": "outlet-pantalones",
+                "text": "pantalones"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#outlet-joggers-desktop": {
+        "props": {
+            "id": "menu-item-outlet-joggers",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/outlet/joggers",
+                "tagTitle": "outlet-joggers",
+                "text": "joggers"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#outlet-shorts-desktop": {
+        "props": {
+            "id": "menu-item-outlet-shorts",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/outlet/shorts",
+                "tagTitle": "outlet-shorts",
+                "text": "shorts"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#outlet-mallas-desktop": {
+        "props": {
+            "id": "menu-item-outlet-mallas",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/outlet/mallas",
+                "tagTitle": "outlet-mallas",
+                "text": "mallas"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#outlet-bikinis-desktop": {
+        "props": {
+            "id": "menu-item-outlet-bikinis",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/outlet/bikinis",
+                "tagTitle": "outlet-bikinis",
+                "text": "bikinis"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#outlet-accesorios-desktop": {
+        "props": {
+            "id": "menu-item-outlet-accesorios",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/outlet/accesorios",
+                "tagTitle": "outlet-accesorios",
+                "text": "accesorios"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    // todo outlet
+    "menu-item#outlet-ver-todo-desktop": {
+        "props": {
+            "id": "menu-item-outlet",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/outlet",
+                "tagTitle": "Otras Temporadas",
+                "text": "ver todo"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    }
+}

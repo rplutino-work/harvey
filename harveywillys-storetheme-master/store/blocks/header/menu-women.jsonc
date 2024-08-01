@@ -1,0 +1,793 @@
+{
+  // mujer
+  "drawer#mujer": {
+    "props": {
+      "maxWidth": "75%",
+      "blockClass": "menuMobContent"
+    },
+    "children": ["menu#mujer"],
+    "blocks": ["drawer-trigger#mujer", "drawer-header#menu"]
+  },
+  "drawer-trigger#mujer": {
+    "children": ["rich-text#mujer"]
+  },
+  "rich-text#mujer": {
+    "props": {
+      "text": "MUJER",
+      "blockClass": "itemFirstDrawer"
+    }
+  },
+  "menu#mujer": {
+    "children": [
+      "rich-text#mujer-titulo",
+      "drawer#mujer-tops",
+      "drawer#mujer-bottoms",
+      "drawer#mujer-accesorios",
+      "menu-item#mujer-ver-todo"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menuMob"
+    }
+  },
+  "rich-text#mujer-titulo": {
+    "props": {
+      "text": "MUJER",
+      "blockClass": "drawerTituloMobile"
+    }
+  },
+  // mujer-tops
+  "drawer#mujer-tops": {
+    "props": {
+      "maxWidth": "75%",
+      "blockClass": "menuMobContent"
+    },
+    "children": ["menu#mujer-tops"],
+    "blocks": ["drawer-trigger#tops", "drawer-header#mujer"]
+  },
+  "drawer-header#mujer": {
+    "children": ["image#return", "drawer-close-button#mujer"]
+  },
+  "drawer-close-button#mujer": {
+    "props": {
+      "text": "MUJER"
+    }
+  },
+  "menu#mujer-tops": {
+    "children": [
+      "rich-text#tops-titulo",
+      "menu-item#mujer-remeras",
+      "menu-item#mujer-camisas",
+      "menu-item#mujer-buzos",
+      "menu-item#mujer-sweater",
+      "menu-item#mujer-camperas",
+      "menu-item#mujer-tapados",
+      "menu-item#mujer-tops-ver-todo"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menuMob"
+    }
+  },
+  "menu-item#mujer-remeras": {
+    "props": {
+      "id": "menu-item-remeras",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba/remeras",
+        "text": "remeras & tops"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#mujer-camisas": {
+    "props": {
+      "id": "menu-item-mujer-camisas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba/camisas",
+        "text": "camisas"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#mujer-buzos": {
+    "props": {
+      "id": "menu-item-mujer-buzos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba/buzos",
+        "text": "buzos"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#mujer-sweater": {
+    "props": {
+      "id": "menu-item-mujer-sweater",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba/sweaters",
+        "text": "sweaters"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#mujer-camperas": {
+    "props": {
+      "id": "menu-item-mujer-camperas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba/camperas",
+        "text": "camperas"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#mujer-tapados": {
+    "props": {
+      "id": "menu-item-mujer-tapados",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba/tapados---blazers",
+        "text": "tapados & blazers"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#mujer-tops-ver-todo": {
+    "props": {
+      "id": "menu-item-tops",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba",
+        "text": "ver todo"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  // mujer-bottoms
+  "drawer#mujer-bottoms": {
+    "props": {
+      "maxWidth": "75%",
+      "blockClass": "menuMobContent"
+    },
+    "children": ["menu#mujer-bottoms"],
+    "blocks": ["drawer-trigger#bottoms", "drawer-header#mujer"]
+  },
+  "menu#mujer-bottoms": {
+    "children": [
+      "rich-text#bottoms-titulo",
+      "menu-item#mujer-jeans",
+      "menu-item#mujer-pantalones",
+      "menu-item#mujer-joggers",
+      "menu-item#mujer-shorts",
+      "menu-item#mujer-mallas",
+      "menu-item#mujer-ropa-interior",
+      "menu-item#mujer-bottoms-ver-todo"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menuMob"
+    }
+  },
+  "menu-item#mujer-jeans": {
+    "props": {
+      "id": "menu-item-mujer-jeans",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/jeans",
+        "text": "jeans"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#mujer-pantalones": {
+    "props": {
+      "id": "menu-item-mujer-pantalones",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/jeans",
+        "text": "pantalones"
+      }
+    }
+  },
+  "menu-item#mujer-joggers": {
+    "props": {
+      "id": "menu-item-mujer-joggers",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/joggers",
+        "text": "joggers"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#mujer-shorts": {
+    "props": {
+      "id": "menu-item-mujer-shorts",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/shorts",
+        "text": "shorts & fitness"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#mujer-mallas": {
+    "props": {
+      "id": "menu-item-mujer-mallas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/mallas",
+        "text": "mallas & bikinis"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#mujer-ropa-interior": {
+    "props": {
+      "id": "menu-item-mujer-ropa-interior",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/ropa-interior",
+        "text": "ropa interior"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#mujer-bottoms-ver-todo": {
+    "props": {
+      "id": "menu-item-bottoms",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo",
+        "text": "ver todo"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  // mujer-accesorios
+  "drawer#mujer-accesorios": {
+    "props": {
+      "maxWidth": "75%",
+      "blockClass": "menuMobContent"
+    },
+    "children": ["menu#mujer-accesorios"],
+    "blocks": ["drawer-trigger#accesorios", "drawer-header#mujer"]
+  },
+  "menu#mujer-accesorios": {
+    "children": [
+      "rich-text#accesorios-titulo",
+      "menu-item#mujer-joyeria",
+      "menu-item#mujer-cinturones",
+      "menu-item#mujer-gorras",
+      "menu-item#mujer-medias",
+      "menu-item#mujer-bolsos",
+      "menu-item#mujer-gafas",
+      "menu-item#mujer-bandanas",
+      "menu-item#mujer-billeteras",
+      "menu-item#mujer-bufandas",
+      "menu-item#mujer-zapatillas",
+      "menu-item#mujer-accesorios-ver-todo"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menuMob"
+    }
+  },
+  "menu-item#mujer-joyeria": {
+    "props": {
+      "id": "menu-item-mujer-joyeria",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/joyeria",
+        "text": "joyeria"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#mujer-cinturones": {
+    "props": {
+      "id": "menu-item-mujer-cinturones",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/cinturones",
+        "text": "cinturones"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#mujer-gorras": {
+    "props": {
+      "id": "menu-item-mujer-gorras",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/gorras",
+        "text": "gorras"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#mujer-medias": {
+    "props": {
+      "id": "menu-item-mujer-medias",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/medias",
+        "text": "medias"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#mujer-bolsos": {
+    "props": {
+      "id": "menu-item-mujer-bolsos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/bolsos",
+        "text": "bolsos"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#mujer-gafas": {
+    "props": {
+      "id": "menu-item-mujer-gafas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/gafas",
+        "text": "gafas"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#mujer-bandanas": {
+    "props": {
+      "id": "menu-item-mujer-bandanas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/bandanas",
+        "text": "bandanas"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#mujer-billeteras": {
+    "props": {
+      "id": "menu-item-mujer-billeteras",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/billeteras",
+        "text": "billeteras"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#mujer-bufandas": {
+    "props": {
+      "id": "menu-item-mujer-bufandas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/bufandas",
+        "text": "bufandas"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#mujer-zapatillas": {
+    "props": {
+      "id": "menu-item-mujer-zapatillas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/zapatillas",
+        "text": "zapatillas"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  "menu-item#mujer-accesorios-ver-todo": {
+    "props": {
+      "id": "menu-item-accesorios",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios",
+        "text": "ver todo"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  // mujer TODO
+  "menu-item#mujer-ver-todo": {
+    "props": {
+      "id": "menu-item-mujer",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/mujer",
+        "text": "ver todo"
+      },
+      "blockClass": "itemLink"
+    }
+  },
+  //MENU MUJER DESKTOP PARA SUB MENU
+  //TOPS
+  "menu-item#mujer-remeras-desktop": {
+    "props": {
+      "id": "menu-item-remeras",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba/remeras",
+        "text": "remeras & tops"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#mujer-camisas-desktop": {
+    "props": {
+      "id": "menu-item-mujer-camisas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba/camisas",
+        "text": "camisas"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#mujer-buzos-desktop": {
+    "props": {
+      "id": "menu-item-mujer-buzos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba/buzos",
+        "text": "buzos"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#mujer-sweater-desktop": {
+    "props": {
+      "id": "menu-item-mujer-sweater",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba/sweaters",
+        "text": "sweaters"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#mujer-camperas-desktop": {
+    "props": {
+      "id": "menu-item-mujer-camperas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba/camperas",
+        "text": "camperas"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#mujer-tapados-desktop": {
+    "props": {
+      "id": "menu-item-mujer-tapados",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba/tapados---blazers",
+        "text": "tapados & blazers"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#mujer-tops-ver-todo-desktop": {
+    "props": {
+      "id": "menu-item-tops",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/tops-•-arriba",
+        "text": "ver todo"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  //BOTTOMS
+  "menu-item#mujer-jeans-desktop": {
+    "props": {
+      "id": "menu-item-mujer-jeans",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/jeans",
+        "text": "jeans"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#mujer-pantalones-desktop": {
+    "props": {
+      "id": "menu-item-mujer-pantalones",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/jeans",
+        "text": "pantalones"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#mujer-joggers-desktop": {
+    "props": {
+      "id": "menu-item-mujer-joggers",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/joggers",
+        "text": "joggers"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#mujer-shorts-desktop": {
+    "props": {
+      "id": "menu-item-mujer-shorts",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/shorts",
+        "text": "shorts & fitness"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#mujer-mallas-desktop": {
+    "props": {
+      "id": "menu-item-mujer-mallas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/mallas",
+        "text": "mallas & bikinis"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#mujer-ropa-interior-desktop": {
+    "props": {
+      "id": "menu-item-mujer-ropa-interior",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo/ropa-interior",
+        "text": "ropa interior"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#mujer-bottoms-ver-todo-desktop": {
+    "props": {
+      "id": "menu-item-bottoms",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa/bottoms-•-abajo",
+        "text": "ver todo"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  //ACCESORIOS
+  "menu-item#mujer-joyeria-desktop": {
+    "props": {
+      "id": "menu-item-mujer-joyeria",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/joyeria",
+        "text": "joyeria"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#mujer-cinturones-desktop": {
+    "props": {
+      "id": "menu-item-mujer-cinturones",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/cinturones",
+        "text": "cinturones"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#mujer-gorras-desktop": {
+    "props": {
+      "id": "menu-item-mujer-gorras",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/gorras",
+        "text": "gorras"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#mujer-medias-desktop": {
+    "props": {
+      "id": "menu-item-mujer-medias",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/medias",
+        "text": "medias"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#mujer-bolsos-desktop": {
+    "props": {
+      "id": "menu-item-mujer-bolsos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/bolsos",
+        "text": "bolsos"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#mujer-gafas-desktop": {
+    "props": {
+      "id": "menu-item-mujer-gafas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/gafas",
+        "text": "gafas"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#mujer-bandanas-desktop": {
+    "props": {
+      "id": "menu-item-mujer-bandanas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/bandanas",
+        "text": "bandanas"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#mujer-billeteras-desktop": {
+    "props": {
+      "id": "menu-item-mujer-billeteras",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/billeteras",
+        "text": "billeteras"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#mujer-bufandas-desktop": {
+    "props": {
+      "id": "menu-item-mujer-bufandas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/bufandas",
+        "text": "bufandas"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#mujer-zapatillas-desktop": {
+    "props": {
+      "id": "menu-item-mujer-zapatillas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/zapatillas",
+        "text": "zapatillas"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  },
+  "menu-item#mujer-accesorios-ver-todo-desktop": {
+    "props": {
+      "id": "menu-item-accesorios",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios",
+        "text": "ver todo"
+      },
+      "blockClass": "itemLink-desktop"
+    }
+  }
+}

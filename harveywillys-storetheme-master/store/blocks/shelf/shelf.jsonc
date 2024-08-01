@@ -1,0 +1,139 @@
+{
+  /* Este archivo contiene los bloques de cada tipo de vitrina que se muestra en el template      */
+  "product-summary.shelf#vitrina-principal-layout-8x8": {
+    "children": [
+      "stack-layout#vitrina"
+      //"product-summary-name"
+      //"product-summary-space",
+      //"flex-layout.row#precios-vitrina",
+      //"flex-layout.row#vitrina-cuotas"
+      /* "flex-layout.row#envio-gratis" */
+    ]
+  },
+  "product-summary.shelf#vitrina-principal": {
+    "children": [
+      "stack-layout#vitrina",
+      "product-summary-name",
+      "product-summary-space",
+      "flex-layout.row#precios-vitrina",
+      "flex-layout.row#vitrina-cuotas"
+      /* "flex-layout.row#envio-gratis" */
+    ]
+  },
+  "stack-layout#vitrina": {
+    "children": [
+      "product-summary-image#vitrina",
+      "portal#pdp--portal-cucardas",
+      "portal#pdp--portal-cucardas-right",
+      "vtex.product-highlights@2.x:product-highlights#collection",
+      "vtex.product-highlights@2.x:product-highlights#promos"
+    ]
+  },
+  "product-summary-image#vitrina": {
+    "props": {
+      "showBadge": false,
+      "hoverImage": {
+        "criteria": "index",
+        "index": 1
+      },
+      "blockClass": "imgShelf"
+    }
+  },
+  "vtex.product-highlights@2.x:product-highlights#collection": {
+    "props": {
+      "type": "collection"
+    },
+    "children": ["product-highlight-wrapper"]
+  },
+  "product-highlight-wrapper": {
+    "props": {
+      "blockClass": "collection"
+    },
+    "children": ["product-highlight-text"]
+  },
+  "product-highlight-text": {
+    "props": {
+      "message": "{highlightName}"
+    }
+  },
+  "vtex.product-highlights@2.x:product-highlights#promos": {
+    "props": {
+      "type": "promotion",
+      "blockClass": "tagPromos"
+    },
+    "children": ["product-highlight-wrapper#promos"]
+  },
+  "product-highlight-wrapper#promos": {
+    "props": {
+      "blockClass": "promos"
+    },
+    "children": ["product-highlight-text"]
+  },
+  //-- nombre del producto
+  "product-summary-name": {
+    "props": {
+      "showFieldsProps": {
+        "showProductReference": false,
+        "showBrandName": false,
+        "showSku": false
+      },
+      "blockClass": "productNameVitrina"
+    }
+  },
+  //-- fila de precio
+  "flex-layout.row#precios-vitrina": {
+    "props": {
+      "horizontalAlign": "center",
+      "colSizing": "auto",
+      "colGap": 2,
+      "preserveLayoutOnMobile": true,
+      "blockClass": "preciosVitrinas"
+    },
+    "children": ["product-selling-price#vitrina", "product-list-price#vitrina"]
+  },
+  "product-selling-price#vitrina": {
+    "props": {
+      "blockClass": "precioVitrina"
+    }
+  },
+  "product-list-price#vitrina": {
+    "props": {
+      "blockClass": "precioListaVitrina"
+    }
+  },
+  //-- cuotas de pago
+  "flex-layout.row#vitrina-cuotas": {
+    "props": {
+      "horizontalAlign": "center",
+      "colSizing": "auto",
+      "colGap": 2,
+      "preserveLayoutOnMobile": true,
+      "blockClass": "cuotasVitrina"
+    },
+    "children": ["product-installments#vitrina-cuotas"]
+  },
+  "product-installments#vitrina-cuotas": {
+    "props": {
+      "message": "{installmentsNumber} cuotas  sin interés de {installmentValue}",
+      "installmentsCriteria": "max-quantity-without-interest",
+      "blockClass": "cuotasVitrina"
+    }
+  },
+  //-- envio gratis
+  "flex-layout.row#envio-gratis": {
+    "props": {
+      "colSizing": "auto",
+      "horizontalAlign": "center",
+      "preserveLayoutOnMobile": true,
+      "marginTop": 2,
+      "blockClass": "rowEnvioGratis"
+    },
+    "children": ["envio-gratis#vitrina"]
+  },
+  "envio-gratis#vitrina": {
+    "props": {
+      "valorMin": 100,
+      "blockClass": "vitrina"
+    }
+  }
+}

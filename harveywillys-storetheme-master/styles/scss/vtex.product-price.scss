@@ -1,0 +1,38 @@
+.sellingPrice--precioReal {
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.sellingPrice--precioVitrina {
+    text-align: center;
+    padding: 0 .5rem;
+}
+
+.listPrice--precioViejo {
+    display: flex;
+    align-items: center;
+    font-size: .9rem;
+    color: #6b6b6b;
+}
+
+.listPrice--precioListaVitrina {
+    font-size: .9rem;
+    color: #6b6b6b;
+}
+
+.installments--cuotasVitrina {
+    text-align: center;
+    margin-top: .25rem;
+    font-size: .875rem;
+    color: #07a21f;
+
+}
+
+.installmentValue,
+.installmentsNumber {
+    font-weight: 500;
+}
+
+.installments--cuotasPDP {
+    color: #07a21f;
+}

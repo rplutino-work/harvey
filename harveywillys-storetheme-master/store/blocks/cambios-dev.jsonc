@@ -1,0 +1,46 @@
+{
+  "store.custom#cambios": {
+    "children": [
+      "no-index",
+      "flex-layout.row#cambios"
+    ]
+  },
+  "flex-layout.row#cambios": {
+    "props": {
+      "horizontalAlign": "center",
+      "marginTop": 6,
+      "marginBottom": 8,
+      "blockClass": "rowLanding"
+    },
+    "children": [
+      "flex-layout.col#cambios"
+    ]
+  },
+  "flex-layout.col#cambios": {
+    "props": {
+      "width": "80%",
+      "rowGap": 1
+    },
+    "children": [
+      "rich-text#cambios-title",
+      "rich-text#cambios-content"
+    ]
+  },
+  "rich-text#cambios-title": {
+    "props": {
+      "text": "CAMBIOS Y DEVOLUCIONES",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heding-2",
+      "blockClass": "tituloLanding"
+    }
+  },
+  "rich-text#cambios-content": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae bibendum quam. Etiam ac sem et dui placerat efficitur nec a metus. Ut hendrerit libero eu ex ultricies, quis finibus massa consectetur. Sed sed arcu massa. Curabitur bibendum urna ut blandit tempor. Maecenas aliquam massa vel eleifend tincidunt. Quisque quis euismod massa, vitae posuere dui. Donec eu suscipit risus. Quisque id sapien pharetra dolor aliquet congue in ut diam. Vestibulum dapibus placerat ante, ut tempor sapien viverra ut. ",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "font": "t-body"
+    }
+  }
+}

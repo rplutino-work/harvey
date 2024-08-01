@@ -1,0 +1,172 @@
+@import '@splidejs/react-splide/dist/css/splide.min.css';
+
+.bannerContainer,
+.bannerContainerSecundario {
+    width: 100%;
+    max-height: 100vh;
+    position: relative;
+}
+
+.carrusel {
+    position: relative;
+    top: -100px;
+}
+
+.SliderContainer {
+    width: 100%;
+    height: 100vh !important;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+
+    .bannerContainer,
+    .bannerContainerSecundario {
+        height: auto;
+    }
+
+    .bannerContainer {
+        top: 0px !important;
+    }
+
+    .bannerContainerSecundario {
+        top: 28.5vh !important;
+    }
+
+    .SliderContainer {
+        height: 32vh !important;
+    }
+}
+
+.texto {
+    margin: 0 auto;
+    position: absolute;
+    top: 250px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    font-size: 28px;
+    color: white;
+}
+
+.dotGroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    gap: 10px;
+}
+
+.dotGroup button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 0px;
+    background-color: var(--dot-color, #ffffff);
+}
+
+/* .imgItem {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+} */
+.imgItemVideo {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.imgItem {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+    padding: 0px;
+    max-height: 100vh;
+
+    @media all and (max-width: 1024px) {
+        height: auto;
+    }
+}
+
+.reactPlayer {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.reactPlayer video {
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: contain !important;
+}
+
+.slideLink {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    font-size: 0;
+    position: relative;
+}
+
+.bannerTitle {
+    margin: 0;
+    font-size: 20px;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+
+    &.bottomRight {
+        left: auto;
+        right: 1rem;
+    }
+
+    &.bottomCenter {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &.centerLeft {
+        bottom: 50%;
+        transform: translateY(-50%);
+    }
+
+    &.center {
+        left: 50%;
+        bottom: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &.centerRight {
+        left: auto;
+        right: 1rem;
+        bottom: 50%;
+        transform: translateY(-50%);
+    }
+
+    &.topLeft {
+        bottom: auto;
+        top: 1rem;
+    }
+
+    &.topCenter {
+        bottom: auto;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &.topRight {
+        bottom: auto;
+        top: 1rem;
+        left: auto;
+        right: 1rem;
+    }
+}
+
+.splide__slide {
+    height: 100% !important;
+}

@@ -1,0 +1,620 @@
+{
+    "store.custom#faq": {
+        "children": [
+            "flex-layout.row#faq"
+        ]   
+  },
+  "flex-layout.row#faq": {
+    "props": {
+        "horizontalAlign": "center",
+        "marginTop": 6,
+        "blockClass": "rowLanding"
+      },
+    "children": [
+      "flex-layout.col#faq"
+    ]
+  },
+  "flex-layout.col#faq": {
+    "props":{
+        "width": "80%",
+        "rowGap": 1
+    },
+    "children": [
+      "rich-text#faq-title",
+      "disclosure-layout-group#group-faq",
+      "flex-layout.row#empty"
+    ]
+  },
+  "rich-text#faq-title": {
+    "props": {
+      "text": "PREGUNTAS FRECUENTES",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heding-2",
+      "blockClass": "tituloLanding"
+    }
+  },
+  "disclosure-layout-group#group-faq": {
+    "children": [
+      "disclosure-layout#faq-1",
+      "disclosure-layout#faq-2",
+      "disclosure-layout#faq-3",
+      "disclosure-layout#faq-4",
+      "disclosure-layout#faq-5",
+      "disclosure-layout#faq-6",
+      "disclosure-layout#faq-7",
+      "disclosure-layout#faq-8",
+      "disclosure-layout#faq-9",
+      "disclosure-layout#faq-10",
+      "disclosure-layout#faq-11",
+      "disclosure-layout#faq-12",
+      "disclosure-layout#faq-13",
+      "disclosure-layout#faq-14",
+      "disclosure-layout#faq-15",
+      "disclosure-layout#faq-16"
+    ]
+  },
+
+    // primera pregunta
+    "disclosure-layout#faq-1": {
+        "children": ["disclosure-trigger#first-faq","disclosure-content#first-faq"]
+    },
+    "disclosure-trigger#first-faq": {
+        "props": {
+            "as": "div",
+            "blockClass": "bloqueFaq"
+        },
+        "children": ["rich-text#titulo-first-faq", "disclosure-state-indicator#faq"]
+    },
+    // titulo 
+    "rich-text#titulo-first-faq":{
+        "props": {
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "text": "Primera Pregunta",
+        "font": "t-heading-5",
+        "blockClass": "shipping-title"
+        }
+    },
+    "disclosure-state-indicator#faq": {
+        "props": {
+          "Show": "icon-plus",
+          "Hide": "icon-minus"
+        }
+    },
+    "disclosure-content#first-faq": {
+        "children": ["rich-text#content-firstfaq"]
+    },
+    // contenido first faq 
+    "rich-text#content-firstfaq":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque leo, maximus et bibendum quis, rhoncus sed neque. Suspendisse congue nisl ante, sed convallis nulla varius a. Donec ac magna scelerisque odio mollis accumsan a vel odio. Integer eleifend suscipit nisl. Sed justo quam, luctus ut leo et, feugiat elementum mauris. Etiam vestibulum libero eget mi consequat, at sollicitudin lectus fringilla. Quisque eget arcu nisl. Proin at faucibus risus. In iaculis nunc mauris, in tristique nunc pulvinar at. Donec orci eros, posuere vitae semper ut, bibendum sed felis. Sed laoreet finibus tempus. ",
+        "font": "t-heading-7",
+        "blockClass": "shipping-message"
+        }
+    },
+
+    // segunda pregunta
+    "disclosure-layout#faq-2": {
+        "children": ["disclosure-trigger#second-faq", "disclosure-content#second-faq"]
+    },
+    "disclosure-trigger#second-faq": {
+    "props": {
+        "as": "div",
+        "blockClass": "bloqueFaq"
+    },
+    "children": ["rich-text#titulo-second-faq", "disclosure-state-indicator#faq"]
+    },
+    // titulo 
+    "rich-text#titulo-second-faq":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Segunda Pregunta",
+        "font": "t-heading-5",
+        "blockClass": "shipping-title"
+        }
+    },
+    "disclosure-content#second-faq": {
+        "children": ["rich-text#content-second-faq"]
+    },
+    // contenido second faq 
+    "rich-text#content-second-faq":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque leo, maximus et bibendum quis, rhoncus sed neque. Suspendisse congue nisl ante, sed convallis nulla varius a. Donec ac magna scelerisque odio mollis accumsan a vel odio. Integer eleifend suscipit nisl. Sed justo quam, luctus ut leo et, feugiat elementum mauris. Etiam vestibulum libero eget mi consequat, at sollicitudin lectus fringilla. Quisque eget arcu nisl. Proin at faucibus risus. In iaculis nunc mauris, in tristique nunc pulvinar at. Donec orci eros, posuere vitae semper ut, bibendum sed felis. Sed laoreet finibus tempus. ",
+        "font": "t-heading-7",
+        "blockClass": "shipping-message"
+        }
+    },
+
+    // tercera pregunta
+    "disclosure-layout#faq-3": {
+        "children": ["disclosure-trigger#third-faq", "disclosure-content#third-faq"]
+    },
+    "disclosure-trigger#third-faq": {
+    "props": {
+        "as": "div",
+        "blockClass": "bloqueFaq"
+    },
+    "children": ["rich-text#titulo-third-faq", "disclosure-state-indicator#faq"]
+    },
+    // titulo 
+    "rich-text#titulo-third-faq":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Tercera Pregunta",
+        "font": "t-heading-5",
+        "blockClass": "shipping-title"
+        }
+    },
+    "disclosure-content#third-faq": {
+        "children": ["rich-text#content-third-faq"]
+    },
+    // contenido third faq 
+    "rich-text#content-third-faq":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque leo, maximus et bibendum quis, rhoncus sed neque. Suspendisse congue nisl ante, sed convallis nulla varius a. Donec ac magna scelerisque odio mollis accumsan a vel odio. Integer eleifend suscipit nisl. Sed justo quam, luctus ut leo et, feugiat elementum mauris. Etiam vestibulum libero eget mi consequat, at sollicitudin lectus fringilla. Quisque eget arcu nisl. Proin at faucibus risus. In iaculis nunc mauris, in tristique nunc pulvinar at. Donec orci eros, posuere vitae semper ut, bibendum sed felis. Sed laoreet finibus tempus. ",
+        "font": "t-heading-7",
+        "blockClass": "shipping-message"
+        }
+    },
+    
+    // cuarta pregunta
+    "disclosure-layout#faq-4": {
+        "children": ["disclosure-trigger#fourth-faq", "disclosure-content#fourth-faq"]
+    },
+    "disclosure-trigger#fourth-faq": {
+        "props": {
+            "as": "div",
+            "blockClass": "bloqueFaq"
+        },
+        "children": ["rich-text#titulo-fourth-faq", "disclosure-state-indicator#faq"]
+    },
+    // titulo 
+    "rich-text#titulo-fourth-faq":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Cuarta Pregunta",
+        "font": "t-heading-5",
+        "blockClass": "shipping-title"
+        }
+    },
+    "disclosure-content#fourth-faq": {
+        "children": ["rich-text#content-fourth-faq"]
+    },
+    // contenido fourth faq 
+    "rich-text#content-fourth-faq":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque leo, maximus et bibendum quis, rhoncus sed neque. Suspendisse congue nisl ante, sed convallis nulla varius a. Donec ac magna scelerisque odio mollis accumsan a vel odio. Integer eleifend suscipit nisl. Sed justo quam, luctus ut leo et, feugiat elementum mauris. Etiam vestibulum libero eget mi consequat, at sollicitudin lectus fringilla. Quisque eget arcu nisl. Proin at faucibus risus. In iaculis nunc mauris, in tristique nunc pulvinar at. Donec orci eros, posuere vitae semper ut, bibendum sed felis. Sed laoreet finibus tempus. ",
+        "font": "t-heading-7",
+        "blockClass": "shipping-message"
+        }
+    },   
+
+    // quinta pregunta
+    "disclosure-layout#faq-5": {
+        "children": ["disclosure-trigger#quinta-faq", "disclosure-content#quinta-faq"]
+    },
+    "disclosure-trigger#quinta-faq": {
+        "props": {
+            "as": "div",
+            "blockClass": "bloqueFaq"
+        },
+        "children": ["rich-text#titulo-quinta-faq", "disclosure-state-indicator#faq"]
+    },
+    // titulo 
+    "rich-text#titulo-quinta-faq":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Quinta Pregunta",
+        "font": "t-heading-5",
+        "blockClass": "shipping-title"
+        }
+    },
+    "disclosure-content#quinta-faq": {
+        "children": ["rich-text#content-quinta-faq"]
+    },
+    // contenido quinta faq 
+    "rich-text#content-quinta-faq":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque leo, maximus et bibendum quis, rhoncus sed neque. Suspendisse congue nisl ante, sed convallis nulla varius a. Donec ac magna scelerisque odio mollis accumsan a vel odio. Integer eleifend suscipit nisl. Sed justo quam, luctus ut leo et, feugiat elementum mauris. Etiam vestibulum libero eget mi consequat, at sollicitudin lectus fringilla. Quisque eget arcu nisl. Proin at faucibus risus. In iaculis nunc mauris, in tristique nunc pulvinar at. Donec orci eros, posuere vitae semper ut, bibendum sed felis. Sed laoreet finibus tempus. ",
+        "font": "t-heading-7",
+        "blockClass": "shipping-message"
+        }
+    },
+    
+    // pregunta 6
+    "disclosure-layout#faq-6": {
+        "children": ["disclosure-trigger#faq-6", "disclosure-content#faq-6"]
+    },
+    "disclosure-trigger#faq-6": {
+    "props": {
+        "as": "div",
+        "blockClass": "bloqueFaq"
+    },
+    "children": ["rich-text#titulo-faq-6", "disclosure-state-indicator#faq"]
+    },
+    // titulo 
+    "rich-text#titulo-faq-6":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Pregunta 6",
+        "font": "t-heading-5",
+        "blockClass": "shipping-title"
+        }
+    },
+    "disclosure-content#faq-6": {
+        "children": ["rich-text#content-faq-6"]
+    },
+    // contenido faq 6
+    "rich-text#content-faq-6":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque leo, maximus et bibendum quis, rhoncus sed neque. Suspendisse congue nisl ante, sed convallis nulla varius a. Donec ac magna scelerisque odio mollis accumsan a vel odio. Integer eleifend suscipit nisl. Sed justo quam, luctus ut leo et, feugiat elementum mauris. Etiam vestibulum libero eget mi consequat, at sollicitudin lectus fringilla. Quisque eget arcu nisl. Proin at faucibus risus. In iaculis nunc mauris, in tristique nunc pulvinar at. Donec orci eros, posuere vitae semper ut, bibendum sed felis. Sed laoreet finibus tempus. ",
+        "font": "t-heading-7",
+        "blockClass": "shipping-message"
+        }
+    },
+
+    // pregunta 7
+    "disclosure-layout#faq-7": {
+        "children": ["disclosure-trigger#faq-7", "disclosure-content#faq-7"]
+    },
+    "disclosure-trigger#faq-7": {
+    "props": {
+        "as": "div",
+        "blockClass": "bloqueFaq"
+    },
+    "children": ["rich-text#titulo-faq-7", "disclosure-state-indicator#faq"]
+    },
+    // titulo 
+    "rich-text#titulo-faq-7":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Pregunta 7",
+        "font": "t-heading-5",
+        "blockClass": "shipping-title"
+        }
+    },
+    "disclosure-content#faq-7": {
+        "children": ["rich-text#content-faq-7"]
+    },
+    // contenido quinta faq 
+    "rich-text#content-faq-7":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque leo, maximus et bibendum quis, rhoncus sed neque. Suspendisse congue nisl ante, sed convallis nulla varius a. Donec ac magna scelerisque odio mollis accumsan a vel odio. Integer eleifend suscipit nisl. Sed justo quam, luctus ut leo et, feugiat elementum mauris. Etiam vestibulum libero eget mi consequat, at sollicitudin lectus fringilla. Quisque eget arcu nisl. Proin at faucibus risus. In iaculis nunc mauris, in tristique nunc pulvinar at. Donec orci eros, posuere vitae semper ut, bibendum sed felis. Sed laoreet finibus tempus. ",
+        "font": "t-heading-7",
+        "blockClass": "shipping-message"
+        }
+    },
+
+    // pregunta 8
+    "disclosure-layout#faq-8": {
+        "children": ["disclosure-trigger#faq-8", "disclosure-content#faq-8"]
+    },
+    "disclosure-trigger#faq-8": {
+        "props": {
+            "as": "div",
+            "blockClass": "bloqueFaq"
+        },
+        "children": ["rich-text#titulo-faq-8", "disclosure-state-indicator#faq"]
+    },
+    // titulo 
+    "rich-text#titulo-faq-8":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Pregunta 8",
+        "font": "t-heading-5",
+        "blockClass": "shipping-title"
+        }
+    },
+    "disclosure-content#faq-8": {
+        "children": ["rich-text#content-faq-8"]
+    },
+    // contenido quinta faq 
+    "rich-text#content-faq-8":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque leo, maximus et bibendum quis, rhoncus sed neque. Suspendisse congue nisl ante, sed convallis nulla varius a. Donec ac magna scelerisque odio mollis accumsan a vel odio. Integer eleifend suscipit nisl. Sed justo quam, luctus ut leo et, feugiat elementum mauris. Etiam vestibulum libero eget mi consequat, at sollicitudin lectus fringilla. Quisque eget arcu nisl. Proin at faucibus risus. In iaculis nunc mauris, in tristique nunc pulvinar at. Donec orci eros, posuere vitae semper ut, bibendum sed felis. Sed laoreet finibus tempus. ",
+        "font": "t-heading-7",
+        "blockClass": "shipping-message"
+        }
+    },
+
+    // pregunta 9
+    "disclosure-layout#faq-9": {
+        "children": ["disclosure-trigger#faq-9", "disclosure-content#faq-9"]
+    },
+    "disclosure-trigger#faq-9": {
+        "props": {
+            "as": "div",
+            "blockClass": "bloqueFaq"
+        },
+        "children": ["rich-text#titulo-faq-9", "disclosure-state-indicator#faq"]
+    },
+    // titulo 
+    "rich-text#titulo-faq-9":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Pregunta 9",
+        "font": "t-heading-5",
+        "blockClass": "shipping-title"
+        }
+    },
+    "disclosure-content#faq-9": {
+        "children": ["rich-text#content-faq-9"]
+    },
+    // contenido sexta faq 
+    "rich-text#content-faq-9":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque leo, maximus et bibendum quis, rhoncus sed neque. Suspendisse congue nisl ante, sed convallis nulla varius a. Donec ac magna scelerisque odio mollis accumsan a vel odio. Integer eleifend suscipit nisl. Sed justo quam, luctus ut leo et, feugiat elementum mauris. Etiam vestibulum libero eget mi consequat, at sollicitudin lectus fringilla. Quisque eget arcu nisl. Proin at faucibus risus. In iaculis nunc mauris, in tristique nunc pulvinar at. Donec orci eros, posuere vitae semper ut, bibendum sed felis. Sed laoreet finibus tempus. ",
+        "font": "t-heading-7",
+        "blockClass": "shipping-message"
+        }
+    },
+    // pregunta 10
+    "disclosure-layout#faq-10": {
+        "children": ["disclosure-trigger#faq-10", "disclosure-content#faq-10"]
+    },
+    "disclosure-trigger#faq-10": {
+        "props": {
+            "as": "div",
+            "blockClass": "bloqueFaq"
+        },
+        "children": ["rich-text#titulo-faq-10", "disclosure-state-indicator#faq"]
+    },
+    // titulo 
+    "rich-text#titulo-faq-10":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Pregunta 10",
+        "font": "t-heading-5",
+        "blockClass": "shipping-title"
+        }
+    },
+    "disclosure-content#faq-10": {
+        "children": ["rich-text#content-faq-10"]
+    },
+    // contenido faq 10 
+    "rich-text#content-faq-10":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque leo, maximus et bibendum quis, rhoncus sed neque. Suspendisse congue nisl ante, sed convallis nulla varius a. Donec ac magna scelerisque odio mollis accumsan a vel odio. Integer eleifend suscipit nisl. Sed justo quam, luctus ut leo et, feugiat elementum mauris. Etiam vestibulum libero eget mi consequat, at sollicitudin lectus fringilla. Quisque eget arcu nisl. Proin at faucibus risus. In iaculis nunc mauris, in tristique nunc pulvinar at. Donec orci eros, posuere vitae semper ut, bibendum sed felis. Sed laoreet finibus tempus. ",
+        "font": "t-heading-7",
+        "blockClass": "shipping-message"
+        }
+    },
+    // pregunta 11
+    "disclosure-layout#faq-11": {
+        "children": ["disclosure-trigger#faq-11", "disclosure-content#faq-11"]
+    },
+    "disclosure-trigger#faq-11": {
+        "props": {
+            "as": "div",
+            "blockClass": "bloqueFaq"
+        },
+        "children": ["rich-text#titulo-faq-11", "disclosure-state-indicator#faq"]
+    },
+    // titulo 
+    "rich-text#titulo-faq-11":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Pregunta 11",
+        "font": "t-heading-5",
+        "blockClass": "shipping-title"
+        }
+    },
+    "disclosure-content#faq-11": {
+        "children": ["rich-text#content-faq-11"]
+    },
+    // contenido faq 11
+    "rich-text#content-faq-11":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque leo, maximus et bibendum quis, rhoncus sed neque. Suspendisse congue nisl ante, sed convallis nulla varius a. Donec ac magna scelerisque odio mollis accumsan a vel odio. Integer eleifend suscipit nisl. Sed justo quam, luctus ut leo et, feugiat elementum mauris. Etiam vestibulum libero eget mi consequat, at sollicitudin lectus fringilla. Quisque eget arcu nisl. Proin at faucibus risus. In iaculis nunc mauris, in tristique nunc pulvinar at. Donec orci eros, posuere vitae semper ut, bibendum sed felis. Sed laoreet finibus tempus. ",
+        "font": "t-heading-7",
+        "blockClass": "shipping-message"
+        }
+    },
+    // pregunta 12
+    "disclosure-layout#faq-12": {
+        "children": ["disclosure-trigger#faq-12", "disclosure-content#faq-12"]
+    },
+    "disclosure-trigger#faq-12": {
+        "props": {
+            "as": "div",
+            "blockClass": "bloqueFaq"
+        },
+        "children": ["rich-text#titulo-faq-12", "disclosure-state-indicator#faq"]
+    },
+    // titulo 
+    "rich-text#titulo-faq-12":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Pregunta 12",
+        "font": "t-heading-5",
+        "blockClass": "shipping-title"
+        }
+    },
+    "disclosure-content#faq-12": {
+        "children": ["rich-text#content-faq-12"]
+    },
+    // contenido faq 12
+    "rich-text#content-faq-12":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque leo, maximus et bibendum quis, rhoncus sed neque. Suspendisse congue nisl ante, sed convallis nulla varius a. Donec ac magna scelerisque odio mollis accumsan a vel odio. Integer eleifend suscipit nisl. Sed justo quam, luctus ut leo et, feugiat elementum mauris. Etiam vestibulum libero eget mi consequat, at sollicitudin lectus fringilla. Quisque eget arcu nisl. Proin at faucibus risus. In iaculis nunc mauris, in tristique nunc pulvinar at. Donec orci eros, posuere vitae semper ut, bibendum sed felis. Sed laoreet finibus tempus. ",
+        "font": "t-heading-7",
+        "blockClass": "shipping-message"
+        }
+    },
+    // pregunta 13
+    "disclosure-layout#faq-13": {
+        "children": ["disclosure-trigger#faq-13", "disclosure-content#faq-13"]
+    },
+    "disclosure-trigger#faq-13": {
+        "props": {
+            "as": "div",
+            "blockClass": "bloqueFaq"
+        },
+        "children": ["rich-text#titulo-faq-13", "disclosure-state-indicator#faq"]
+    },
+    "rich-text#titulo-faq-13":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Pregunta 13",
+        "font": "t-heading-5",
+        "blockClass": "shipping-title"
+        }
+    },
+    "disclosure-content#faq-13": {
+        "children": ["rich-text#content-faq-13"]
+    },
+    // contenido faq 13
+    "rich-text#content-faq-13":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque leo, maximus et bibendum quis, rhoncus sed neque. Suspendisse congue nisl ante, sed convallis nulla varius a. Donec ac magna scelerisque odio mollis accumsan a vel odio. Integer eleifend suscipit nisl. Sed justo quam, luctus ut leo et, feugiat elementum mauris. Etiam vestibulum libero eget mi consequat, at sollicitudin lectus fringilla. Quisque eget arcu nisl. Proin at faucibus risus. In iaculis nunc mauris, in tristique nunc pulvinar at. Donec orci eros, posuere vitae semper ut, bibendum sed felis. Sed laoreet finibus tempus. ",
+        "font": "t-heading-7",
+        "blockClass": "shipping-message"
+        }
+    },
+    // pregunta 14
+    "disclosure-layout#faq-14": {
+        "children": ["disclosure-trigger#faq-14", "disclosure-content#faq-14"]
+    },
+    "disclosure-trigger#faq-14": {
+        "props": {
+            "as": "div",
+            "blockClass": "bloqueFaq"
+        },
+        "children": ["rich-text#titulo-faq-14", "disclosure-state-indicator#faq"]
+    },
+    "rich-text#titulo-faq-14":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Pregunta 14",
+        "font": "t-heading-5",
+        "blockClass": "shipping-title"
+        }
+    },
+    "disclosure-content#faq-14": {
+        "children": ["rich-text#content-faq-14"]
+    },
+    // contenido faq 14
+    "rich-text#content-faq-14":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque leo, maximus et bibendum quis, rhoncus sed neque. Suspendisse congue nisl ante, sed convallis nulla varius a. Donec ac magna scelerisque odio mollis accumsan a vel odio. Integer eleifend suscipit nisl. Sed justo quam, luctus ut leo et, feugiat elementum mauris. Etiam vestibulum libero eget mi consequat, at sollicitudin lectus fringilla. Quisque eget arcu nisl. Proin at faucibus risus. In iaculis nunc mauris, in tristique nunc pulvinar at. Donec orci eros, posuere vitae semper ut, bibendum sed felis. Sed laoreet finibus tempus. ",
+        "font": "t-heading-7",
+        "blockClass": "shipping-message"
+        }
+    },
+    // pregunta 15
+    "disclosure-layout#faq-15": {
+        "children": ["disclosure-trigger#faq-15", "disclosure-content#faq-15"]
+    },
+    "disclosure-trigger#faq-15": {
+        "props": {
+            "as": "div",
+            "blockClass": "bloqueFaq"
+        },
+        "children": ["rich-text#titulo-faq-15", "disclosure-state-indicator#faq"]
+    },
+    "rich-text#titulo-faq-15":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Pregunta 15",
+        "font": "t-heading-5",
+        "blockClass": "shipping-title"
+        }
+    },
+    "disclosure-content#faq-15": {
+        "children": ["rich-text#content-faq-15"]
+    },
+    // contenido faq 15
+    "rich-text#content-faq-15":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque leo, maximus et bibendum quis, rhoncus sed neque. Suspendisse congue nisl ante, sed convallis nulla varius a. Donec ac magna scelerisque odio mollis accumsan a vel odio. Integer eleifend suscipit nisl. Sed justo quam, luctus ut leo et, feugiat elementum mauris. Etiam vestibulum libero eget mi consequat, at sollicitudin lectus fringilla. Quisque eget arcu nisl. Proin at faucibus risus. In iaculis nunc mauris, in tristique nunc pulvinar at. Donec orci eros, posuere vitae semper ut, bibendum sed felis. Sed laoreet finibus tempus. ",
+        "font": "t-heading-7",
+        "blockClass": "shipping-message"
+        }
+    },
+    // pregunta 16
+    "disclosure-layout#faq-16": {
+        "children": ["disclosure-trigger#faq-16", "disclosure-content#faq-16"]
+    },
+    "disclosure-trigger#faq-16": {
+        "props": {
+            "as": "div",
+            "blockClass": "bloqueFaq"
+        },
+        "children": ["rich-text#titulo-faq-16", "disclosure-state-indicator#faq"]
+    },
+    "rich-text#titulo-faq-16":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Pregunta 16",
+        "font": "t-heading-5",
+        "blockClass": "shipping-title"
+        }
+    },
+    "disclosure-content#faq-16": {
+        "children": ["rich-text#content-faq-16"]
+    },
+    // contenido faq 16
+    "rich-text#content-faq-16":{
+        "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "LEFT",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque leo, maximus et bibendum quis, rhoncus sed neque. Suspendisse congue nisl ante, sed convallis nulla varius a. Donec ac magna scelerisque odio mollis accumsan a vel odio. Integer eleifend suscipit nisl. Sed justo quam, luctus ut leo et, feugiat elementum mauris. Etiam vestibulum libero eget mi consequat, at sollicitudin lectus fringilla. Quisque eget arcu nisl. Proin at faucibus risus. In iaculis nunc mauris, in tristique nunc pulvinar at. Donec orci eros, posuere vitae semper ut, bibendum sed felis. Sed laoreet finibus tempus. ",
+        "font": "t-heading-7",
+        "blockClass": "shipping-message"
+        }
+    },
+    // fila vacia que sirve para completar el borde inferior del ultimo item
+    "flex-layout.row#empty": {
+        "props": {
+            "marginBottom": 9,
+            "blockClass": "rowVaciaBordeSup"
+        },
+        "children": []
+    }
+}   

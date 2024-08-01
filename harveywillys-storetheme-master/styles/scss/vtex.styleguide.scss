@@ -1,0 +1,12 @@
+.input{
+    background-color: transparent;
+    color: inherit;
+}
+@media(min-width: 920px){
+    .input::placeholder{
+        color: #000;
+    }
+    .input :global(.vtex-input__suffix){
+        background-color: transparent;
+    }
+}

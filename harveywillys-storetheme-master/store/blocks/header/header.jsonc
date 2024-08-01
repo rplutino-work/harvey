@@ -1,0 +1,270 @@
+{
+  /* HEADER DEL TEMPLATE */
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop",
+      //"header-layout.desktop-scroll",
+      "header-layout.mobile"
+    ]
+  },
+  //-- DESKTOP HEADER
+  "header-layout.desktop": {
+    "children": [
+      //"flex-layout.row#1-desktop",
+      "sticky-layout#header-desktop",
+      //"flex-layout.row#2-desktop" //COMENTAR
+      "flex-layout.row#cucardas--pdp",
+      "flex-layout.row#cucardas--vitrinas"
+    ]
+  },
+  "header-layout.desktop-scroll": {
+    "props": {
+      "blockClass": "header-desktop-scroll"
+    },
+    "children": [
+      //"flex-layout.row#1-desktop",
+      "sticky-layout#header-desktop"
+    ]
+  },
+  // primera fila - promocion
+  "flex-layout.row#1-desktop": {
+    "props": {
+      "fullWidth": "true"
+    },
+    "children": ["notification.bar#home"]
+  },
+  "notification.bar#home": {
+    "props": {
+      "content": "ENVÍOS GRATIS A PARTIR DE $18000"
+    }
+  },
+  // sticky header
+  "sticky-layout#header-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#header-desktop", "barra-promociones#Desktop"]
+  },
+  "barra-promociones#Desktop": {
+    "props": {
+      "id": "Desktop"
+    }
+  },
+  "flex-layout.row#header-desktop": {
+    "props": {
+      "fullWidth": true,
+      "horizontalAlign": "between",
+      "blockClass": "stickyHeader"
+    },
+    "children": [
+      //"flex-layout.col#empty",
+      "flex-layout.row#menu-container",
+      "flex-layout.col#logo-desktop-3",
+      "flex-layout.col#login-minicart"
+    ]
+  },
+  //-- columna empty
+  "flex-layout.col#empty": {
+    "props": {
+      "width": "40%"
+    },
+    "children": []
+  },
+  //-- columna de logo
+  "flex-layout.col#logo-desktop-3": {
+    "props": {
+      "width": "20%",
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "blockClass": "colLogoHeaderDk"
+    },
+    "children": ["logo"]
+  },
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "/arquivos/HW Harvey Gif optimize.gif",
+      "width": "100",
+      "height": "100",
+      "blockClass": "logoHarveyHeader"
+    }
+  },
+  //-- columnas de iconos, busqueda, login, cart
+  "flex-layout.col#login-minicart": {
+    "props": {
+      "width": "40%",
+      "blockClass": "loginminicartHeader"
+    },
+    "children": ["flex-layout.row#login-minicart"]
+  },
+  "flex-layout.row#login-minicart": {
+    "props": {
+      "colSizing": "auto",
+      "horizontalAlign": "right"
+    },
+    "children": ["search-bar", "login", "minicart.v2"]
+  },
+  // "search-bar": {
+  //   "props": {
+  //     "displayMode": "clear-button",
+  //     "placeholder": "Search",
+  //     // "maxWidth": 280,
+  //     "blockClass": "searchHeader"
+  //   }
+  // },
+
+  "search-bar": {
+    // "blocks": [
+    //   "autocomplete-result-list.v2"
+    // ],
+    "props": {
+      "emptyPlaceholder": "No se encontraron resultados",
+      "placeholder": "Buscar",
+      "displayMode": "search-button",
+      "hasIconLeft": false,
+      "openAutocompleteOnFocus": true,
+      "blockClass": "search-text"
+    },
+    "title": "Buscador"
+  },
+  "autocomplete-result-list.v2": {
+    "blocks": ["product-summary.shelf#header-search"],
+    "props": {
+      "blockClass": "search-result-list",
+      "historyFirst": true,
+      "maxWidth": "100%"
+    }
+  },
+  "login": {
+    "props": {
+      "showIconProfile": true,
+      "hideIconLabel": true
+      // "hasGoogleOneTap": true
+    }
+  },
+  // minicart.v2 -> archivo minicart.jsonc
+  // menu
+  "flex-layout.row#2-desktop": {
+    "props": {
+      "blockClass": "layoutMenu",
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#2-desktop"] // menu -> menu.jsonc
+  },
+  "flex-layout.col#2-desktop": {
+    "props": {
+      "width": "100%"
+    },
+    "children": ["menu-custom"]
+  },
+  //-- MOBILE HEADER
+  "barra-promociones#Mobile": {
+    "props": {
+      "id": "Mobile"
+    }
+  },
+  "header-layout.mobile": {
+    "children": [
+      //"flex-layout.row#1-desktop",
+      "sticky-layout#mobile",
+      
+      "flex-layout.row#cucardas--pdp",
+      "flex-layout.row#cucardas--vitrinas"
+    ]
+  },
+  "sticky-layout#mobile": {
+    "props": {
+      "blockClass": "sticky-header-mobile"
+    },
+    "children": ["flex-layout.row#sticky-mobile", "barra-promociones#Mobile"],
+    "props": {
+      "blockClass": "headerStickyMobile"
+    }
+  },
+  "flex-layout.row#sticky-mobile": {
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true,
+      "colSizing": "equal",
+      "horizontalAlign": "between",
+      "blockClass": "mainHeaderMobile"
+    },
+    "children": [
+      "flex-layout.col#drawer-search",
+      //"flex-layout.col#header-mb-searchbar-container",
+      "flex-layout.col#logo-header",
+      "flex-layout.col#cart"
+    ]
+  },
+  "flex-layout.col#drawer-search": {
+    "props": {
+      "width": "33%",
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    },
+    "children": ["flex-layout.row#drawer-search"]
+  },
+  "flex-layout.row#drawer-search": {
+    "props": {
+      "preventVerticalStretch": false,
+      "preventHorizontalStretch": false,
+      "preserveLayoutOnMobile": true,
+      "colSizing": "equal",
+      "horizontalAlign": "between"
+    },
+    "children": [
+      "drawer#moblie",
+      //"overlay-trigger#search-mob"
+      "overlay-trigger#search-bar"
+    ]
+  },
+  "overlay-trigger#search-mob": {
+    "children": ["icon-search", "overlay-layout#search"]
+  },
+  "icon-search": {
+    "props": {
+      "size": 22
+    }
+  },
+  "overlay-layout#search": {
+    "props": {
+      "placement": "bottom",
+      "scrollBehavior": "close-on-scroll"
+    },
+    "children": ["search-bar#mobile"]
+  },
+  "search-bar#mobile": {
+    "props": {
+      "displayMode": "clear-button",
+      "placeholder": "Search"
+      // "maxWidth": 280
+    }
+  },
+  "flex-layout.col#logo-header": {
+    "props": {
+      "width": "33%",
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    },
+    "children": ["logo"]
+  },
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "/arquivos/HW Harvey Gif optimize.gif",
+      "width": "80"
+    }
+  },
+  "flex-layout.col#cart": {
+    "props": {
+      "width": "33%",
+      "verticalAlign": "middle"
+    },
+    "children": ["minicart.v2"]
+  }
+}

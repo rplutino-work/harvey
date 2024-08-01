@@ -1,0 +1,629 @@
+{
+    "flex-layout.row#menu-container": {
+        "children": [
+            "drawer#main-menu"
+        ],
+        "props": {
+            "blockClass": "menu-container"
+        }
+    },
+    "drawer#main-menu": {
+        "props": {
+            "position": "left",
+            "width": "500px",
+            "blockClass": "menu-container-hijo"
+        },
+        "children": [
+            "menu#category-menu"
+        ]
+    },
+    "menu#category-menu": {
+        "props": {
+            "orientation": "vertical"
+        },
+        "children": [
+            "menu-item#new-collection",
+            "menu-item#hombre",
+            "menu-item#mujer",
+            "menu-item#otras-temporadas",
+            "menu-item#cool-stuff",
+            "menu-item#sunsetrip"
+        ]
+    },
+    "menu-item#mujer": {
+        "props": {
+            "id": "menu-item-mujer",
+            "type": "custom",
+            "highlight": false,
+            "isVisible": true,
+            "itemProps": {
+                "type": "internal",
+                "href": "/mujer",
+                "text": "MUJER"
+            },
+            "blockClass": "itemLink"
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#mujer"
+        ]
+    },
+    "menu-item#hombre": {
+        "props": {
+            "id": "menu-item-hombre",
+            "type": "custom",
+            "highlight": false,
+            "isVisible": true,
+            "itemProps": {
+                "type": "internal",
+                "href": "/hombre",
+                "text": "HOMBRE"
+            },
+            "blockClass": "itemLink"
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#hombre"
+        ]
+    },
+    "menu-item#new-collection": {
+        "props": {
+            "id": "menu-item-new-collection",
+            "type": "custom",
+            "highlight": false,
+            "isVisible": true,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa",
+                "text": "NEW ARRIVALS"
+            },
+            "blockClass": "itemLink"
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#new-collection"
+        ]
+    },
+    "menu-item#otras-temporadas": {
+        "props": {
+            "id": "menu-item-otras-temporadas",
+            "type": "custom",
+            "highlight": false,
+            "isVisible": true,
+            "itemProps": {
+                "type": "internal",
+                "href": "/oulet",
+                "text": "OTRAS TEMPORADAS"
+            },
+            "blockClass": "itemLink"
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#otras-temporadas"
+        ]
+    },
+    "menu-item#cool-stuff": {
+        "props": {
+            "id": "menu-item-cool-stuff",
+            "type": "custom",
+            "highlight": false,
+            "isVisible": true,
+            "itemProps": {
+                "type": "internal",
+                "href": "/home",
+                "text": "COOL STUFF"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#sunsetrip": {
+        "props": {
+            "id": "menu-item-sunsetrip",
+            "type": "custom",
+            "highlight": false,
+            "isVisible": true,
+            "itemProps": {
+                "type": "internal",
+                "href": "/140?map=productClusterIds",
+                "text": "SUNSETSTRIP"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#otros": {
+        "props": {
+            "id": "menu-item-otros",
+            "type": "custom",
+            "highlight": false,
+            "isVisible": true,
+            "itemProps": {
+                "type": "internal",
+                "href": "/otros",
+                "text": "OTROS"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "vtex.menu@2.x:submenu#mujer": {
+        "props": {
+            "position": "left",
+            "width": "500px",
+            "orientation": "vertical",
+            "blockClass": "sub-menu-hijo"
+        },
+        "children": [
+            "menu-item#mujer-tops",
+            "menu-item#mujer-bottoms",
+            "menu-item#mujer-accesorios"
+        ]
+    },
+    "menu-item#mujer-tops": {
+        "props": {
+            "id": "mujer-tops",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/tops-•-arriba",
+                "text": "TOPS ARRIBA"
+            },
+            "blockClass": "itemLink-sub-hijo"
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#mujer-tops"
+        ]
+    },
+    "menu-item#mujer-bottoms": {
+        "props": {
+            "id": "mujer-bottoms",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/bottoms-•-abajo",
+                "text": "BOTTOMS ABAJO"
+            },
+            "blockClass": "itemLink-sub-hijo"
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#mujer-bottoms"
+        ]
+    },
+    "menu-item#mujer-accesorios": {
+        "props": {
+            "id": "mujer-accesorios",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/accesorios",
+                "text": "ACCESORIOS"
+            },
+            "blockClass": "itemLink-sub-hijo"
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#mujer-accesorios"
+        ]
+    },
+    "vtex.menu@2.x:submenu#hombre": {
+        "props": {
+            "position": "left",
+            "width": "500px",
+            "orientation": "vertical",
+            "blockClass": "sub-menu-hijo"
+        },
+        "children": [
+            "menu-item#hombre-tops",
+            "menu-item#hombre-bottoms",
+            "menu-item#hombre-accesorios"
+        ]
+    },
+    "menu-item#hombre-tops": {
+        "props": {
+            "id": "hombre-tops",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/tops-•-arriba",
+                "text": "TOPS ARRIBA"
+            },
+            "blockClass": "itemLink-sub-hijo"
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#hombre-tops"
+        ]
+    },
+    "menu-item#hombre-bottoms": {
+        "props": {
+            "id": "hombre-bottoms",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/bottoms-•-abajo",
+                "text": "BOTTOMS ABAJO"
+            },
+            "blockClass": "itemLink-sub-hijo"
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#hombre-bottoms"
+        ]
+    },
+    "menu-item#hombre-accesorios": {
+        "props": {
+            "id": "hombre-accesorios",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/accesorios",
+                "text": "ACCESORIOS"
+            },
+            "blockClass": "itemLink-sub-hijo"
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#hombre-accesorios"
+        ]
+    },
+    "vtex.menu@2.x:submenu#new-collection": {
+        "props": {
+            "position": "left",
+            "width": "500px",
+            "orientation": "vertical",
+            "blockClass": "sub-menu-hijo"
+        },
+        "children": [
+            "menu-item#new-collection-tops",
+            "menu-item#new-collection-bottoms",
+            "menu-item#new-collection-accesorios"
+        ]
+    },
+    "menu-item#new-collection-tops": {
+        "props": {
+            "id": "collection-tops",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/tops-•-arriba/camperas",
+                "text": "TOPS ARRIBA"
+            },
+            "blockClass": "itemLink-sub-hijo"
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#new-collection-tops"
+        ]
+    },
+    "menu-item#new-collection-bottoms": {
+        "props": {
+            "id": "collection-bottoms",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/bottoms-•-abajo",
+                "text": "BOTTOMS ABAJO"
+            },
+            "blockClass": "itemLink-sub-hijo"
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#new-collection-bottoms"
+        ]
+    },
+    "menu-item#new-collection-accesorios": {
+        "props": {
+            "id": "collection-accesorios",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/accesorios",
+                "text": "ACCESORIOS"
+            },
+            "blockClass": "itemLink-sub-hijo"
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#new-collection-accesorios"
+        ]
+    },
+    "vtex.menu@2.x:submenu#otras-temporadas": {
+        "props": {
+            "position": "left",
+            "width": "500px",
+            "orientation": "vertical",
+            "blockClass": "sub-menu-hijo"
+        },
+        "children": [
+            "menu-item#outlet-remeras-desktop",
+            "menu-item#outlet-camisas-desktop",
+            "menu-item#outlet-buzos-desktop",
+            "menu-item#outlet-sweater-desktop",
+            "menu-item#outlet-camperas-desktop",
+            "menu-item#outlet-jeans-desktop",
+            "menu-item#outlet-pantalones-desktop",
+            "menu-item#outlet-joggers-desktop",
+            "menu-item#outlet-shorts-desktop",
+            "menu-item#outlet-mallas-desktop",
+            "menu-item#outlet-bikinis-desktop",
+            "menu-item#outlet-accesorios-desktop",
+            "menu-item#outlet-ver-todo-desktop"
+        ]
+    },
+    "menu-item#otras-temporadas-tops": {
+        "props": {
+            "id": "otras-temporadas-tops",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/tops-•-arriba/camperas",
+                "text": "ACCESORIOS"
+            },
+            "blockClass": "itemLink-sub-hijo"
+        }
+    },
+    "menu-item#otras-temporadas-bottoms": {
+        "props": {
+            "id": "otras-temporadas-bottoms",
+            "type": "custom",
+            "href": "/otras-temporadas/bottoms",
+            "label": "Bottoms",
+            "blockClass": "menu-item-new"
+        }
+    },
+    "menu-item#otras-temporadas-accesorios": {
+        "props": {
+            "id": "otras-temporadas-accesorios",
+            "type": "custom",
+            "href": "/otras-temporadas/accesorios",
+            "label": "Accesorios",
+            "blockClass": "menu-item-new"
+        }
+    },
+    "vtex.menu@2.x:submenu#mujer-tops": {
+        "props": {
+            "position": "left",
+            "width": "500px",
+            "orientation": "vertical",
+            "blockClass": "sub-menu-hijo2"
+        },
+        "children": [
+            "menu#mujer-tops-desktop"
+        ]
+    },
+    "menu#mujer-tops-desktop": {
+        "children": [
+            "menu-item#mujer-remeras-desktop",
+            "menu-item#mujer-camisas-desktop",
+            "menu-item#mujer-buzos-desktop",
+            "menu-item#mujer-sweater-desktop",
+            "menu-item#mujer-camperas-desktop",
+            "menu-item#mujer-tapados-desktop",
+            "menu-item#mujer-tops-ver-todo-desktop"
+        ],
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "menu-sub-hijo"
+        }
+    },
+    "vtex.menu@2.x:submenu#mujer-bottoms": {
+        "props": {
+            "position": "left",
+            "width": "500px",
+            "orientation": "vertical",
+            "blockClass": "sub-menu-hijo2"
+        },
+        "children": [
+            "menu#mujer-bottoms-desktop"
+        ]
+    },
+    "menu#mujer-bottoms-desktop": {
+        "children": [
+            "menu-item#mujer-jeans-desktop",
+            "menu-item#mujer-pantalones-desktop",
+            "menu-item#mujer-joggers-desktop",
+            "menu-item#mujer-shorts-desktop",
+            "menu-item#mujer-mallas-desktop",
+            "menu-item#mujer-ropa-interior-desktop",
+            "menu-item#mujer-bottoms-ver-todo-desktop"
+        ],
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "menu-sub-hijo"
+        }
+    },
+    "vtex.menu@2.x:submenu#mujer-accesorios": {
+        "props": {
+            "position": "left",
+            "width": "500px",
+            "orientation": "vertical",
+            "blockClass": "sub-menu-hijo2"
+        },
+        "children": [
+            "menu#mujer-accesorios-desktop"
+        ]
+    },
+    "menu#mujer-accesorios-desktop": {
+        "children": [
+            "menu-item#mujer-joyeria-desktop",
+            "menu-item#mujer-cinturones-desktop",
+            "menu-item#mujer-gorras-desktop",
+            "menu-item#mujer-medias-desktop",
+            "menu-item#mujer-bolsos-desktop",
+            "menu-item#mujer-gafas-desktop",
+            "menu-item#mujer-bandanas-desktop",
+            "menu-item#mujer-billeteras-desktop",
+            "menu-item#mujer-bufandas-desktop",
+            "menu-item#mujer-zapatillas-desktop",
+            "menu-item#mujer-accesorios-ver-todo-desktop"
+        ],
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "menu-sub-hijo"
+        }
+    },
+    "vtex.menu@2.x:submenu#hombre-tops": {
+        "props": {
+            "position": "left",
+            "width": "500px",
+            "orientation": "vertical",
+            "blockClass": "sub-menu-hijo2"
+        },
+        "children": [
+            "menu#hombre-tops-sub-hijo"
+        ]
+    },
+    "menu#hombre-tops-sub-hijo": {
+        "children": [
+            "menu-item#hombre-remeras-desktop",
+            "menu-item#hombre-camisas-desktop",
+            "menu-item#hombre-buzos-desktop",
+            "menu-item#hombre-sweater-desktop",
+            "menu-item#hombre-camperas-desktop",
+            "menu-item#hombre-tapados-desktop",
+            "menu-item#hombre-tops-ver-todo-desktop"
+        ],
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "menu-sub-hijo"
+        }
+    },
+    "vtex.menu@2.x:submenu#hombre-bottoms": {
+        "props": {
+            "position": "left",
+            "width": "500px",
+            "orientation": "vertical",
+            "blockClass": "sub-menu-hijo2"
+        },
+        "children": [
+            "menu#hombre-bottoms-sub-hijo"
+        ]
+    },
+    "menu#hombre-bottoms-sub-hijo": {
+        "children": [
+            "menu-item#hombre-jeans-desktop",
+            "menu-item#hombre-pantalones-desktop",
+            "menu-item#hombre-joggers-desktop",
+            "menu-item#hombre-shorts-desktop",
+            "menu-item#hombre-mallas-desktop",
+            "menu-item#hombre-boxers-desktop",
+            "menu-item#hombre-bottoms-ver-todo-desktop"
+        ],
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "menu-sub-hijo"
+        }
+    },
+    "vtex.menu@2.x:submenu#hombre-accesorios": {
+        "props": {
+            "position": "left",
+            "width": "500px",
+            "orientation": "vertical",
+            "blockClass": "sub-menu-hijo2"
+        },
+        "children": [
+            "menu#hombre-accesorios-sub-hijo"
+        ]
+    },
+    "menu#hombre-accesorios-sub-hijo": {
+        "children": [
+            "menu-item#hombre-joyeria-desktop",
+            "menu-item#hombre-cinturones-desktop",
+            "menu-item#hombre-gorras-desktop",
+            "menu-item#hombre-medias-desktop",
+            "menu-item#hombre-bolsos-desktop",
+            "menu-item#hombre-gafas-desktop",
+            "menu-item#hombre-bandanas-desktop",
+            "menu-item#hombre-billeteras-desktop",
+            "menu-item#hombre-bufandas-desktop",
+            "menu-item#hombre-zapatillas-desktop",
+            "menu-item#hombre-accesorios-ver-todo-desktop"
+        ],
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "menu-sub-hijo"
+        }
+    },
+    "vtex.menu@2.x:submenu#new-collection-tops": {
+        "props": {
+            "position": "left",
+            "width": "500px",
+            "orientation": "vertical",
+            "blockClass": "sub-menu-hijo2"
+        },
+        "children": [
+            "menu#colecciones-tops-desktop"
+        ]
+    },
+    "menu#colecciones-tops-desktop": {
+        "children": [
+            "menu-item#colecciones-remeras-desktop",
+            "menu-item#colecciones-camisas-desktop",
+            "menu-item#colecciones-buzos-desktop",
+            "menu-item#colecciones-sweater-desktop",
+            "menu-item#colecciones-camperas-desktop",
+            "menu-item#colecciones-vestidos-desktop",
+            "menu-item#colecciones-tapados-desktop",
+            "menu-item#colecciones-tops-ver-todo-desktop"
+        ],
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "menu-sub-hijo"
+        }
+    },
+    "vtex.menu@2.x:submenu#new-collection-bottoms": {
+        "props": {
+            "position": "left",
+            "width": "500px",
+            "orientation": "vertical",
+            "blockClass": "sub-menu-hijo2"
+        },
+        "children": [
+            "menu#colecciones-bottoms-desktop"
+        ]
+    },
+    "menu#colecciones-bottoms-desktop": {
+        "children": [
+            "menu-item#colecciones-jeans-desktop",
+            "menu-item#colecciones-pantalones-desktop",
+            "menu-item#colecciones-joggers-desktop",
+            "menu-item#colecciones-shorts-desktop",
+            "menu-item#colecciones-polleras-desktop",
+            "menu-item#colecciones-mallas-desktop",
+            "menu-item#colecciones-bikinis-desktop",
+            "menu-item#colecciones-boxers-desktop",
+            "menu-item#colecciones-bottoms-ver-todo-desktop"
+        ],
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "menu-sub-hijo"
+        }
+    },
+    "vtex.menu@2.x:submenu#new-collection-accesorios": {
+        "props": {
+            "position": "left",
+            "width": "500px",
+            "orientation": "vertical",
+            "blockClass": "sub-menu-hijo2"
+        },
+        "children": [
+            "menu#colecciones-accesorios-desktop"
+        ]
+    },
+    "menu#colecciones-accesorios-desktop": {
+        "children": [
+            "menu-item#colecciones-joyeria-desktop",
+            "menu-item#colecciones-cinturones-desktop",
+            "menu-item#colecciones-gorras-desktop",
+            "menu-item#colecciones-medias-desktop",
+            "menu-item#colecciones-bolsos-desktop",
+            "menu-item#colecciones-gafas-desktop",
+            "menu-item#colecciones-bandanas-desktop",
+            "menu-item#colecciones-billeteras-desktop",
+            "menu-item#colecciones-bufandas-desktop",
+            "menu-item#colecciones-zapatillas-desktop",
+            "menu-item#colecciones-accesorios-ver-todo-desktop"
+        ],
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "menu-sub-hijo"
+        }
+    }
+}

@@ -1,0 +1,818 @@
+{
+    // hombre
+    "drawer#hombre": {
+        "props": {
+            "maxWidth": "75%",
+            "blockClass": "menuMobContent"
+        },
+        "children": [
+            "menu#hombre"
+        ],
+        "blocks": [
+            "drawer-trigger#hombre",
+            "drawer-header#menu"
+        ]
+    },
+    "drawer-trigger#hombre": {
+        "children": [
+            "rich-text#hombre"
+        ]
+    },
+    "rich-text#hombre": {
+        "props": {
+            "text": "hombre",
+            "blockClass": "itemFirstDrawer"
+        }
+    },
+    "menu#hombre": {
+        "children": [
+            "rich-text#hombre-titulo",
+            "drawer#hombre-tops",
+            "drawer#hombre-bottoms",
+            "drawer#hombre-accesorios",
+            "menu-item#hombre-ver-todo"
+        ],
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "menuMob"
+        }
+    },
+    "rich-text#hombre-titulo": {
+        "props": {
+            "text": "hombre",
+            "blockClass": "drawerTituloMobile"
+        }
+    },
+    // hombre-tops
+    "drawer#hombre-tops": {
+        "props": {
+            "maxWidth": "75%",
+            "blockClass": "menuMobContent"
+        },
+        "children": [
+            "menu#hombre-tops"
+        ],
+        "blocks": [
+            "drawer-trigger#tops",
+            "drawer-header#hombre"
+        ]
+    },
+    "drawer-header#hombre": {
+        "children": [
+            "image#return",
+            "drawer-close-button#hombre"
+        ]
+    },
+    "drawer-close-button#hombre": {
+        "props": {
+            "text": "HOMBRE"
+        }
+    },
+    "menu#hombre-tops": {
+        "children": [
+            "rich-text#tops-titulo",
+            "menu-item#hombre-remeras",
+            "menu-item#hombre-camisas",
+            "menu-item#hombre-buzos",
+            "menu-item#hombre-sweater",
+            "menu-item#hombre-camperas",
+            "menu-item#hombre-tapados",
+            "menu-item#hombre-tops-ver-todo"
+        ],
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "menuMob"
+        }
+    },
+    "menu-item#hombre-remeras": {
+        "props": {
+            "id": "menu-item-remeras",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/tops-•-arriba/remeras",
+                "text": "remeras"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#hombre-camisas": {
+        "props": {
+            "id": "menu-item-hombre-camisas",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/tops-•-arriba/camisas",
+                "text": "camisas"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#hombre-buzos": {
+        "props": {
+            "id": "menu-item-hombre-buzos",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/tops-•-arriba/buzos",
+                "text": "buzos"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#hombre-sweater": {
+        "props": {
+            "id": "menu-item-hombre-sweater",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/tops-•-arriba/sweaters",
+                "text": "sweaters"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#hombre-camperas": {
+        "props": {
+            "id": "menu-item-hombre-camperas",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/tops-•-arriba/camperas",
+                "text": "camperas"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#hombre-tapados": {
+        "props": {
+            "id": "menu-item-hombre-tapados",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/tops-•-arriba/tapados---blazers",
+                "text": "tapados & blazers"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#hombre-tops-ver-todo": {
+        "props": {
+            "id": "menu-item-tops",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/tops-•-arriba",
+                "text": "ver todo"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    // hombre-bottoms
+    "drawer#hombre-bottoms": {
+        "props": {
+            "maxWidth": "75%",
+            "blockClass": "menuMobContent"
+        },
+        "children": [
+            "menu#hombre-bottoms"
+        ],
+        "blocks": [
+            "drawer-trigger#bottoms",
+            "drawer-header#hombre"
+        ]
+    },
+    "menu#hombre-bottoms": {
+        "children": [
+            "rich-text#bottoms-titulo",
+            "menu-item#hombre-jeans",
+            "menu-item#hombre-pantalones",
+            "menu-item#hombre-joggers",
+            "menu-item#hombre-shorts",
+            "menu-item#hombre-mallas",
+            "menu-item#hombre-boxers",
+            "menu-item#hombre-bottoms-ver-todo"
+        ],
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "menuMob"
+        }
+    },
+    "menu-item#hombre-jeans": {
+        "props": {
+            "id": "menu-item-hombre-jeans",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/bottoms-•-abajo/jeans",
+                "text": "jeans"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#hombre-pantalones": {
+        "props": {
+            "id": "menu-item-hombre-pantalones",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/bottoms-•-abajo/pantalones",
+                "text": "pantalones"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#hombre-joggers": {
+        "props": {
+            "id": "menu-item-hombre-joggers",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/bottoms-•-abajo/joggers",
+                "text": "joggers"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#hombre-shorts": {
+        "props": {
+            "id": "menu-item-hombre-shorts",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/bottoms-•-abajo/shorts",
+                "text": "shorts"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#hombre-mallas": {
+        "props": {
+            "id": "menu-item-hombre-mallas",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/bottoms-•-abajo/mallas",
+                "text": "mallas"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#hombre-boxers": {
+        "props": {
+            "id": "menu-item-hombre-boxers",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/bottoms-•-abajo/boxers",
+                "text": "boxers"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#hombre-bottoms-ver-todo": {
+        "props": {
+            "id": "menu-item-bottoms",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/bottoms-•-abajo",
+                "text": "ver todo"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    // hombre-accesorios
+    "drawer#hombre-accesorios": {
+        "props": {
+            "maxWidth": "75%",
+            "blockClass": "menuMobContent"
+        },
+        "children": [
+            "menu#hombre-accesorios"
+        ],
+        "blocks": [
+            "drawer-trigger#accesorios",
+            "drawer-header#hombre"
+        ]
+    },
+    "menu#hombre-accesorios": {
+        "children": [
+            "rich-text#accesorios-titulo",
+            "menu-item#hombre-joyeria",
+            "menu-item#hombre-cinturones",
+            "menu-item#hombre-gorras",
+            "menu-item#hombre-medias",
+            "menu-item#hombre-bolsos",
+            "menu-item#hombre-gafas",
+            "menu-item#hombre-bandanas",
+            "menu-item#hombre-billeteras",
+            "menu-item#hombre-bufandas",
+            "menu-item#hombre-zapatillas",
+            "menu-item#hombre-accesorios-ver-todo"
+        ],
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "menuMob"
+        }
+    },
+    "menu-item#hombre-joyeria": {
+        "props": {
+            "id": "menu-item-hombre-joyeria",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/accesorios/joyeria",
+                "text": "joyeria"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#hombre-cinturones": {
+        "props": {
+            "id": "menu-item-hombre-cinturones",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/accesorios/cinturones",
+                "text": "cinturones"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#hombre-gorras": {
+        "props": {
+            "id": "menu-item-hombre-gorras",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/accesorios/gorras",
+                "text": "gorras"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#hombre-medias": {
+        "props": {
+            "id": "menu-item-hombre-medias",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/accesorios/medias",
+                "text": "medias"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#hombre-bolsos": {
+        "props": {
+            "id": "menu-item-hombre-bolsos",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/accesorios/bolsos",
+                "text": "bolsos"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#hombre-gafas": {
+        "props": {
+            "id": "menu-item-hombre-gafas",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/accesorios/gafas",
+                "text": "gafas"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#hombre-bandanas": {
+        "props": {
+            "id": "menu-item-hombre-bandanas",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/accesorios/bandanas",
+                "text": "bandanas"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#hombre-billeteras": {
+        "props": {
+            "id": "menu-item-hombre-billeteras",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/accesorios/billeteras",
+                "text": "billeteras"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#hombre-bufandas": {
+        "props": {
+            "id": "menu-item-hombre-bufandas",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/accesorios/bufandas",
+                "text": "bufandas"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#hombre-zapatillas": {
+        "props": {
+            "id": "menu-item-hombre-zapatillas",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/accesorios/zapatillas",
+                "text": "zapatillas"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    "menu-item#hombre-accesorios-ver-todo": {
+        "props": {
+            "id": "menu-item-accesorios",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/accesorios",
+                "text": "ver todo"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    // hombre TODO
+    "menu-item#hombre-ver-todo": {
+        "props": {
+            "id": "menu-item-hombre",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/hombre",
+                "text": "ver todo"
+            },
+            "blockClass": "itemLink"
+        }
+    },
+    // MENU DESKTOP HOMBRE TOPS
+    "menu-item#hombre-remeras-desktop": {
+        "props": {
+            "id": "menu-item-remeras",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/tops-•-arriba/remeras",
+                "text": "remeras"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#hombre-camisas-desktop": {
+        "props": {
+            "id": "menu-item-hombre-camisas",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/tops-•-arriba/camisas",
+                "text": "camisas"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#hombre-buzos-desktop": {
+        "props": {
+            "id": "menu-item-hombre-buzos",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/tops-•-arriba/buzos",
+                "text": "buzos"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#hombre-sweater-desktop": {
+        "props": {
+            "id": "menu-item-hombre-sweater",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/tops-•-arriba/sweaters",
+                "text": "sweaters"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#hombre-camperas-desktop": {
+        "props": {
+            "id": "menu-item-hombre-camperas",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/tops-•-arriba/camperas",
+                "text": "camperas"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#hombre-tapados-desktop": {
+        "props": {
+            "id": "menu-item-hombre-tapados",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/tops-•-arriba/tapados---blazers",
+                "text": "tapados & blazers"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#hombre-tops-ver-todo-desktop": {
+        "props": {
+            "id": "menu-item-tops",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/tops-•-arriba",
+                "text": "ver todo"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    //MENU HOMBRE BOTTOMS SUB MENU 
+    "menu-item#hombre-jeans-desktop": {
+        "props": {
+            "id": "menu-item-hombre-jeans",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/bottoms-•-abajo/jeans",
+                "text": "jeans"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#hombre-pantalones-desktop": {
+        "props": {
+            "id": "menu-item-hombre-pantalones",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/bottoms-•-abajo/pantalones",
+                "text": "pantalones"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#hombre-joggers-desktop": {
+        "props": {
+            "id": "menu-item-hombre-joggers",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/bottoms-•-abajo/joggers",
+                "text": "joggers"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#hombre-shorts-desktop": {
+        "props": {
+            "id": "menu-item-hombre-shorts",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/bottoms-•-abajo/shorts",
+                "text": "shorts"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#hombre-mallas-desktop": {
+        "props": {
+            "id": "menu-item-hombre-mallas",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/bottoms-•-abajo/mallas",
+                "text": "mallas"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#hombre-boxers-desktop": {
+        "props": {
+            "id": "menu-item-hombre-boxers",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/bottoms-•-abajo/boxers",
+                "text": "boxers"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#hombre-bottoms-ver-todo-desktop": {
+        "props": {
+            "id": "menu-item-bottoms",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/ropa/bottoms-•-abajo",
+                "text": "ver todo"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    //MENU HOMBRE ACCESORIOS SUB MENU
+    "menu-item#hombre-joyeria-desktop": {
+        "props": {
+            "id": "menu-item-hombre-joyeria",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/accesorios/joyeria",
+                "text": "joyeria"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#hombre-cinturones-desktop": {
+        "props": {
+            "id": "menu-item-hombre-cinturones",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/accesorios/cinturones",
+                "text": "cinturones"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#hombre-gorras-desktop": {
+        "props": {
+            "id": "menu-item-hombre-gorras",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/accesorios/gorras",
+                "text": "gorras"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#hombre-medias-desktop": {
+        "props": {
+            "id": "menu-item-hombre-medias",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/accesorios/medias",
+                "text": "medias"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#hombre-bolsos-desktop": {
+        "props": {
+            "id": "menu-item-hombre-bolsos",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/accesorios/bolsos",
+                "text": "bolsos"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#hombre-gafas-desktop": {
+        "props": {
+            "id": "menu-item-hombre-gafas",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/accesorios/gafas",
+                "text": "gafas"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#hombre-bandanas-desktop": {
+        "props": {
+            "id": "menu-item-hombre-bandanas",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/accesorios/bandanas",
+                "text": "bandanas"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#hombre-bufandas-desktop": {
+        "props": {
+            "id": "menu-item-hombre-bufandas",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/accesorios/bufandas",
+                "text": "bufandas"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#hombre-billeteras-desktop": {
+        "props": {
+            "id": "menu-item-hombre-billeteras",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/accesorios/billeteras",
+                "text": "billeteras"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#hombre-zapatillas-desktop": {
+        "props": {
+            "id": "menu-item-hombre-zapatillas",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/accesorios/zapatillas",
+                "text": "zapatillas"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    },
+    "menu-item#hombre-accesorios-ver-todo-desktop": {
+        "props": {
+            "id": "menu-item-accesorios",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/accesorios",
+                "text": "ver todo"
+            },
+            "blockClass": "itemLink-desktop"
+        }
+    }
+}

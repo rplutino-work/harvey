@@ -1,0 +1,117 @@
+{
+  "responsive-layout.mobile#footer-mobile--social": {
+    "children": ["vtex.menu@2.x:menu#footer-mobile--social"]
+  },
+  "vtex.menu@2.x:menu#footer-mobile--social": {
+    "props": {
+      "blockClass": "footerMobile__social",
+      "items": [{
+          "id": "menu-item-social-1",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "external",
+            "href": "https://www.instagram.com/harveywillys/",
+            "noFollow": false,
+            "tagTitle": "INSTAGRAM",
+            "text": "INSTAGRAM"
+          }
+        },
+        {
+          "id": "menu-item-social-2",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "external",
+            "href": "https://www.youtube.com/channel/UCsBIfzzyjaNsydScq13Xy5Q",
+            "noFollow": false,
+            "tagTitle": "YOUTUBE",
+            "text": "YOUTUBE"
+          }
+        },
+        {
+          "id": "menu-item-social-3",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "external",
+            "href": "https://www.facebook.com/people/Harvey-Willys/100063532211304/",
+            "noFollow": false,
+            "tagTitle": "FACEBOOK",
+            "text": "FACEBOOK"
+          }
+        }
+      ]
+    }
+  },
+
+  "responsive-layout.mobile#footer-mobile--links": {
+    "children": ["vtex.menu@2.x:menu#footer-mobile--links"]
+  },
+  "vtex.menu@2.x:menu#footer-mobile--links": {
+    "props": {
+      "blockClass": "footerMobile__links",
+      "items": [{
+          "id": "menu-item-links-1",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/preguntas-frecuentes",
+            "noFollow": false,
+            "tagTitle": "Preguntas Frecuentes",
+            "text": "Preguntas Frecuentes"
+          }
+        },
+        {
+          "id": "menu-item-links-2",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/cambios-y-devoluciones",
+            "noFollow": false,
+            "tagTitle": "Cambios y Devoluciones",
+            "text": "Cambios y Devoluciones"
+          }
+        },
+        {
+          "id": "menu-item-links-3",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/envios",
+            "noFollow": false,
+            "tagTitle": "Envíos",
+            "text": "Envíos"
+          }
+        },
+        {
+          "id": "menu-item-links-4",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/politica-de-privacidad",
+            "noFollow": false,
+            "tagTitle": "Política de Privacidad",
+            "text": "Política de Privacidad"
+          }
+        },
+        {
+          "id": "menu-item-links-5",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/terminos-y-condiciones",
+            "noFollow": false,
+            "tagTitle": "Términos y Condiciones",
+            "text": "Términos y Condiciones"
+          }
+        }
+      ]
+    }
+  }
+}

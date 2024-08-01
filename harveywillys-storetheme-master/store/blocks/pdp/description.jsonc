@@ -1,0 +1,46 @@
+{
+    // SECCION DE DESCRIPCION DEL PRODUCTO DE LA PAGINA DE PRODUCTOS 
+    "flex-layout.row#description":{
+        "props": {
+            "rowGap": 0,
+            "horizontalAlign": "center",
+            "blockClass": "seccionDesplegable"
+        },
+        "children": ["flex-layout.col#description"]
+    },
+    "flex-layout.col#description":{
+        "props":{
+            "rowGap": 1
+        },
+        "children":["disclosure-layout#simple-descripcion"]
+    },
+    "disclosure-layout#simple-descripcion": {
+        "children": ["disclosure-trigger#simple-descripcion", "disclosure-content#simple-descripcion"]
+    },
+    "disclosure-trigger#simple-descripcion": {
+    "props": {
+        "as": "div",
+        "blockClass": "pdp"
+    },
+    "children": ["rich-text#titulo-descripcion", "disclosure-state-indicator#pdp"]
+    },
+  // titulo 
+  "rich-text#titulo-descripcion":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "Descripción y Cuidados",
+      "font": "t-heading-5",
+      "blockClass": "tituloDesplegablePdp"
+    }
+  },
+  "disclosure-content#simple-descripcion": {
+    "children": ["product-description"]
+  },
+  // texto de descripcion del producto
+    "product-description":{
+        "props": {
+            "showTitle": false
+        }
+    }
+}

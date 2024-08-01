@@ -1,0 +1,110 @@
+{
+    // Definición de ids de cucardas para matchearlos en una determinada posición
+    "cucardas#shelf--top-right": {
+        "props": {
+            "context": true,
+            "id": "shelf-top-right"
+        }
+    },
+    "cucardas#pdp--top-left": {
+        "props": {
+            "context": true,
+            "id": "pdp-top-left"
+        }
+    },
+    "cucardas#pdp--top-right": {
+        "props": {
+            "context": true,
+            "id": "pdp-top-right"
+        }
+    },
+    // Wrappers de header desktop y mobile, para agrupar cucardas por página/componente. Estos son los bloques que se van a usar para customizar las cucardas desde Site Editor
+    "flex-layout.row#cucardas--vitrinas": {
+        "title": "Cucardas Vitrinas",
+        "children": [
+            "cucardas#shelf--top-right"
+        ]
+    },
+    "flex-layout.row#cucardas--pdp": {
+        "title": "Cucardas PDP",
+        "children": [
+            "cucardas#pdp--top-left",
+            "cucardas#pdp--top-right"
+        ]
+    },
+    // CUCARDAS EN VITRINA
+    // Definición del portal que actúa de contenedor de las cucardas en distintas posiciones.
+    "portal#shelf--portal-cucardas": {
+        "children": [
+            "cucardas#shelf-portal--top-right"
+        ],
+        "props": {
+            "parents": 2,
+            "querySelector": ".vtex-flex-layout-0-x-flexRowContent--mainShelf__topRowColRight__cucardas .vtex-flex-layout-0-x-stretchChildrenWidth"
+        }
+    },
+    // Definición del bloque de cucarda asignado a una determinada posición. Tiene que matchear el id con el que está en el header. Se pueden definir estilos inline por default que afectan a cualquier cucarda que se cree en esta ubicación.
+    "cucardas#shelf-portal--top-right": {
+        "props": {
+            "id": "shelf-top-right",
+            "styles": {
+                // "position": "absolute",
+                "flexDirection": "column",
+                // "zIndex": 9,
+                // "top": "0px",
+                // "right": "0px",
+                "marginTop": "10px",
+                "alignItems": "flex-end",
+                "maxWidth": "100px"
+            }
+        }
+    },
+    // CUCARDAS EN PDP IZQUIERDA
+    "portal#pdp--portal-cucardas": {
+        "children": [
+            "cucardas#pdp-portal--top-left"
+        ],
+        "props": {
+            "parents": 2,
+            "querySelector": ".vtex-stack-layout-0-x-stackItem--first"
+        }
+    },
+    "cucardas#pdp-portal--top-left": {
+        "props": {
+            "id": "pdp-top-left",
+            "styles": {
+                "position": "absolute",
+                "flexDirection": "column",
+                "zIndex": 9,
+                "top": "0px",
+                "left": "0px",
+                "alignItems": "flex-end",
+                "maxWidth": "100px"
+            }
+        }
+    },
+    // CUCARDAS EN PDP DERECHA
+    "portal#pdp--portal-cucardas-right": {
+        "children": [
+            "cucardas#pdp-portal--top-right"
+        ],
+        "props": {
+            "parents": 2,
+            "querySelector": ".vtex-stack-layout-0-x-stackItem--first"
+        }
+    },
+    "cucardas#pdp-portal--top-right": {
+        "props": {
+            "id": "pdp-top-right",
+            "styles": {
+                "position": "absolute",
+                "flexDirection": "column",
+                "zIndex": 9,
+                "top": "0px",
+                "right": "0px",
+                "alignItems": "flex-end",
+                "maxWidth": "100px"
+            }
+        }
+    }
+}

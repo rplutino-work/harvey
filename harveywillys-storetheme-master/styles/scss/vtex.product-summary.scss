@@ -1,0 +1,62 @@
+.nameContainer {
+    justify-content: center;
+    padding: 1.5rem .5rem .5rem .5rem;
+}
+
+.container {
+    text-align: start;
+    max-width: 500px !important;
+    border-radius: 0px;
+}
+
+.imageContainer {
+    text-align: center;
+}
+
+.image--imgShelf {
+    max-height: unset;
+}
+
+.image--imgShelf--hover {
+    z-index: 0;
+    height: auto
+}
+
+.productNameContainer {
+    text-align: center;
+}
+
+.element {
+    padding-top: 0px;
+}
+
+// HEADER SEARCH
+.container--header-search-product {
+    max-width: none !important;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.element--header-search-product {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.imageWrapper--image__search {
+    width: fit-content;
+}
+
+.imageContainer--image__search {
+    max-width: 130px;
+    padding: 5px;
+    background: #000;
+}
+
+.nameContainer--header-search-product-name {
+    padding: 0;
+}
+
+.brandName--header-search-product-name {
+    font-weight: 600;
+}

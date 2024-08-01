@@ -1,0 +1,374 @@
+{
+  "footer": {
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
+  },
+  //-- DESKTOP
+  "footer-layout.desktop": {
+    "children": [
+      "responsive-layout.desktop#newsletter", // newsletter - DESKTOP
+      "flex-layout.row#row-seguinos",
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-2-desktop"
+    ],
+    "props": {
+      "blockClass": "footer--container"
+    }
+  },
+  // primera fila - informacion de la tienda
+  "flex-layout.row#footer-1-desktop": {
+    "props": {
+      // "preventVerticalStretch": true,
+      "paddingTop": 7,
+      "paddingBottom": 7,
+      "colSizing": "auto",
+      "horizontalAlign": "between",
+      "blockClass": "rowFooter"
+    },
+    "children": [
+      "flex-layout.col#col-ayuda",
+      "flex-layout.col#col-empresa",
+      "flex-layout.col#col-contactos"
+      //"flex-layout.col#col-seguinos"
+    ]
+  },
+  // primera columna - ayuda
+  "flex-layout.col#col-ayuda": {
+    "props": {
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#ayuda",
+      "rich-text#faq",
+      "rich-text#cambios-devoluciones",
+      "rich-text#envios-footer"
+    ]
+  },
+  "rich-text#ayuda": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "AYUDA",
+      "font": "t-heading-7",
+      "blockClass": "tituloFooter"
+    }
+  },
+  "rich-text#faq": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "[Preguntas Frecuentes](/preguntas-frecuentes)",
+      "font": "t-heading-7",
+      "blockClass": "textoFooter"
+    }
+  },
+  "rich-text#cambios-devoluciones": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "[Cambios y Devoluciones](/cambios-y-devoluciones)",
+      "font": "t-heading-7",
+      "blockClass": "textoFooter"
+    }
+  },
+  "rich-text#envios-footer": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "[Envíos](/envios)",
+      "font": "t-heading-7",
+      "blockClass": "textoFooter"
+    }
+  },
+  // segunda comlumna - empresa
+  "flex-layout.col#col-empresa": {
+    "props": {
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#empresa",
+      "rich-text#politica-privacidad",
+      "rich-text#terminos-condiciones",
+      "image#afip-footer"
+    ]
+  },
+  "rich-text#empresa": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "EMPRESA",
+      "font": "t-heading-7",
+      "blockClass": "tituloFooter"
+    }
+  },
+  "rich-text#politica-privacidad": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "[Política de Privacidad](/politica-de-privacidad)",
+      "font": "t-heading-7",
+      "blockClass": "textoFooter"
+    }
+  },
+  "rich-text#terminos-condiciones": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "[Términos y Condiciones](/terminos-y-condiciones)",
+      "font": "t-heading-7",
+      "blockClass": "textoFooter"
+    }
+  },
+  "image#afip-footer": {
+    "props": {
+      "link": {
+        "newTab": true,
+        "url": "http://qr.afip.gob.ar/?qr=LoP3Bwpm2xYE0T1l16v6yA,,"
+      },
+      "src": "/arquivos/logo-afip-blanco.png",
+      "blockClass": "imgAfip",
+      "maxWidth": 40
+    }
+  },
+  // tercera columna - CONTACTOS
+  "flex-layout.col#col-contactos": {
+    "props": {
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#contacto",
+      "rich-text#store",
+      "rich-text#correo",
+      "rich-text#telefono"
+    ]
+  },
+  "rich-text#contacto": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "CONTACTO",
+      "font": "t-heading-7",
+      "blockClass": "tituloFooter"
+    }
+  },
+  "rich-text#store": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "Atención al cliente:",
+      "font": "t-heading-7",
+      "blockClass": "textoFooter"
+    }
+  },
+  "rich-text#telefono": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "[+54 9 11 2784-1511]()",
+      "font": "t-heading-7",
+      "blockClass": "textoFooter"
+    }
+  },
+  "rich-text#correo": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "info@harveywillys.com",
+      "font": "t-heading-7",
+      "blockClass": "textoFooter"
+    }
+  },
+  // cuarta columna - seguinos
+  "flex-layout.col#col-seguinos": {
+    "props": {
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#seguinos",
+      "rich-text#instagram",
+      "rich-text#youtube",
+      "rich-text#facebook"
+    ]
+  },
+  "rich-text#seguinos": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "SEGUINOS",
+      "font": "t-heading-7",
+      "blockClass": "tituloFooter"
+    }
+  },
+  "rich-text#instagram": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "[instagram](https://www.instagram.com/harveywillys/?target=_blank)",
+      "font": "t-heading-7",
+      "blockClass": [
+        "textoFooter",
+        "textorowFooter"
+      ]
+    }
+  },
+  "rich-text#youtube": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "[youtube](https://www.youtube.com/channel/UCsBIfzzyjaNsydScq13Xy5Q?target=_blank)",
+      "font": "t-heading-7",
+      "blockClass": [
+        "textoFooter",
+        "textorowFooter"
+      ]
+    }
+  },
+  "rich-text#facebook": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "[facebook](https://www.facebook.com/people/Harvey-Willys/100063532211304/?target=_blank)",
+      "font": "t-heading-7",
+      "blockClass": [
+        "textoFooter",
+        "textorowFooter"
+      ]
+    }
+  },
+  //-- SEGUNDA FILA FOOTER
+  "flex-layout.row#footer-2-desktop": {
+    "props": {
+      "paddingTop": 8,
+      "paddingBottom": 8,
+      "fullWidth": true,
+      "colSizing": "auto",
+      "horizontalAlign": "around",
+      "preventVerticalStretch": true,
+      "blockClass": "rowFooterLogos"
+    },
+    "children": [
+      "rich-text#poweredby",
+      "flex-layout.col#row2-col1"
+    ]
+  },
+  "rich-text#poweredby": {
+    "props": {
+      "text": "© 2023 Harvey Willys. Todos los derechos reservados.",
+      "font": "t-body",
+      "blockClass": "textoDerechosFooter"
+    }
+  },
+  "flex-layout.col#row2-col1": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "colFooterLogos"
+    },
+    "children": [
+      "image#afip-footer",
+      "image#logo-vtex",
+      "image#footer-nomada"
+    ]
+  },
+  "image#logo-vtex": {
+    "props": {
+      "link": {
+        "newTab": true,
+        "url": "https://vtex.com"
+      },
+      "src": "/arquivos/logo-vtex-blanco.png",
+      "blockClass": "imgAfip",
+      "maxWidth": 50
+    }
+  },
+  "rich-text#developedby": {
+    "props": {
+      "text": "Developed by",
+      "font": "t-body",
+      "blockClass": "textoDerechosFooter"
+    }
+  },
+  "image#footer-nomada": {
+    "props": {
+      "link": {
+        "newTab": true,
+        "url": "https://nomadadigital.com.ar/"
+      },
+      "src": "/arquivos/logo-nomada-blanco.png",
+      "blockClass": "imgAfip",
+      "maxWidth": 50
+    }
+  },
+  //-- MOBILE
+  "footer-layout.mobile": {
+    "children": [
+      "responsive-layout.mobile#newsletter", // newsletter - MOBILE
+      "responsive-layout.mobile#footer-mobile--social", // Redes - MOBILE
+      "responsive-layout.mobile#footer-mobile--links", // Links - MOBILE
+    //   "vtex.menu@2.x:menu#footer-mobile",
+      "flex-layout.row#afip-mob",
+      "flex-layout.row#copyright-mob"
+    ]
+  },
+  // imagen afip
+  "flex-layout.row#afip-mob": {
+    "props": {
+      "marginBottom": 5,
+      "horizontalAlign": "center",
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#afip-footer"
+    ]
+  },
+  // ultima fila mobile
+  "flex-layout.row#copyright-mob": {
+    "props": {
+      "fullWidth": true,
+      "paddingTop": 7,
+      "paddingBottom": 7,
+      "blockClass": "rowCopyRightMob"
+    },
+    "children": [
+      "rich-text#texto-footer-mob-1",
+      "flex-layout.col#col-footer-mob"
+    ]
+  },
+  "rich-text#texto-footer-mob-1": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "© 2022 Harvey Willys. Todos los derechos reservados",
+      "font": "t-heading-7",
+      "blockClass": "textoFooterMob"
+    }
+  },
+  "flex-layout.col#col-footer-mob": {
+    "children": [
+      "flex-layout.row#row-footer-mob"
+    ]
+  },
+  "flex-layout.row#row-footer-mob": {
+    "props": {
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "image#afip-footer",
+      "image#logo-vtex",
+      "image#footer-nomada"
+    ]
+  },
+  //Fila seguinos
+  "flex-layout.row#row-seguinos": {
+    "props": {
+      "blockClass": "row-container-seguinos",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#instagram",
+      "rich-text#youtube",
+      "rich-text#facebook"
+    ]
+  }
+}

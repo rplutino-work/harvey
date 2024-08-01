@@ -1,0 +1,55 @@
+{
+    //-- LAYOUT - TEXTO DE CONDICIONES DE pagos
+  "flex-layout.row#pagos":{
+    "props": {
+        "rowGap": 0,
+        "horizontalAlign": "center",
+        "blockClass": "seccionDesplegable"
+    },
+    "children":["flex-layout.col#fila-pagos"],
+    "title": "Metodos de Pago"
+  },
+  // separa el layout en dos filas: TITULO Y CONTENIDO
+  "flex-layout.col#fila-pagos":{
+    "props":{
+      "rowGap": 1
+    },
+    "children": [
+      "disclosure-layout#simple-pagos"
+    ]
+  },
+  // titulo de condiciones de pagos
+  "rich-text#pagos-titulo":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "Métodos de Pago",
+      "font": "t-heading-5",
+      "blockClass": "tituloDesplegablePdp"
+    },
+    "title": "Metodos de Pago"
+  },
+  "disclosure-layout#simple-pagos": {
+    "children": ["disclosure-trigger#simple-pagos", "disclosure-content#simple-pagos"]
+  },
+  "disclosure-trigger#simple-pagos": {
+    "props": {
+      "as": "div",
+      "blockClass": "pdp"
+    },
+    "children": ["rich-text#pagos-titulo", "disclosure-state-indicator#pdp"]
+  },
+  "disclosure-content#simple-pagos": {
+    "children": ["rich-text#pagos"]
+  },
+  // texto de condiciones de pagos
+  "rich-text#pagos":{
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lobortis quam metus, eget vestibulum tortor pulvinar sit amet. Suspendisse nec orci eget urna fringilla sagittis scelerisque sit amet mauris. Vestibulum semper feugiat mi, vel vestibulum velit pretium eget. Sed mollis fringilla est id iaculis. Nunc scelerisque tincidunt quam sed dignissim. Suspendisse potenti. Ut molestie iaculis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum eget semper est. Morbi in odio nec neque commodo tempor. Nulla a elementum neque, in tempus sapien. ",
+      "font": "t-heading-7",
+      "blockClass": "textoDesplegablePdp"
+    }
+  }
+}

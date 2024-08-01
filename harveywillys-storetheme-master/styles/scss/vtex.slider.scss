@@ -1,0 +1,13 @@
+.dotsContainer {
+    display: none;
+}
+@media(min-width: 768px){
+    .sliderFrame{
+        grid-gap: 15px;
+    }
+}
+@media(max-width: 768px){
+    .sliderFrame{
+        grid-gap: 10px;
+    }
+}

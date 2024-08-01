@@ -1,0 +1,47 @@
+.container {
+    margin: 5% 5% 0 35px;
+    font-size: .7rem;
+}
+
+@media screen and (max-width : 678px) {
+    .container {
+        margin: 15% 5% 0 10px;
+        font-size: .7rem;
+    }
+}
+
+.link {
+    padding-bottom: 6px;
+    text-transform: uppercase;
+    color: #9a9a9a;
+}
+
+.term {
+    color: #9a9a9a;
+}
+
+.homeLink::before {
+    content: "HOME";
+}
+
+.homeLink {
+    padding: 0px 4px 3px 0px;
+}
+
+.homeIcon {
+    display: none;
+}
+
+.caretIcon {
+    padding-bottom: 0px;
+    width: 6px !important;
+    color: #a2a1a1;
+}
+
+.arrow {
+    padding: 0px;
+}
+
+.term {
+    text-transform: uppercase;
+}

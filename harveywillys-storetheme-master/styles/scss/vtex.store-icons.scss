@@ -1,0 +1,21 @@
+.caretIcon{
+    width: 12px;
+    color: #939292;
+}
+.plusIcon,
+.minusIcon{
+    margin: auto 0;
+}
+@media screen and (min-width: 1028px){
+    .filterIcon{
+        padding-right: .35rem;
+    }
+}
+
+.gridIcon{
+    color: #000;
+}
+
+.inlineGridIcon{
+    color: #000;
+}

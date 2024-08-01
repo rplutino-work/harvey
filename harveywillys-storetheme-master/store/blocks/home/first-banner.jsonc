@@ -1,0 +1,75 @@
+{
+    //-- DESKTOP
+    "responsive-layout.desktop#first-banner": {
+        "children": ["flex-layout.row#image2"]
+    },
+    "flex-layout.row#image2": {
+        "props": {
+            "marginTop": 9,
+            "marginBottom": 0,
+            "colSizing": "equal",
+            "horizontalAlign": "center",
+            "fullWidth": true,
+            "blockClass": "firstBanner"
+        },
+        "children": ["flex-layout.col#banner1-col1", "flex-layout.col#banner1-col2"],
+        "title": "Banner 1"
+    },
+    "flex-layout.col#banner1-col1": {
+        "children": ["image#banner1-1", "image#banner1-2"]
+    },
+    "image#banner1-1": {
+        "props": {
+          "src": "https://delucca.vteximg.com.br/arquivos/img-test2.png",
+          "blockClass": "imagePromo"
+        },
+        "title": "Img 1 Banner 1"
+    },
+    "image#banner1-2": {
+        "props": {
+          "src": "https://delucca.vteximg.com.br/arquivos/img-test.png",
+          "blockClass": "imagePromo"
+        },
+        "title": "Img 2 Banner 1"
+    },
+    "flex-layout.col#banner1-col2": {
+        "children": ["image#banner1-3", "image#banner1-4"]
+    },
+    "image#banner1-3": {
+        "props": {
+          "src": "https://delucca.vteximg.com.br/arquivos/img-test2.png",
+          "blockClass": "imagePromo"
+        },
+        "title": "Img 3 Banner 1"
+    },
+    "image#banner1-4": {
+        "props": {
+          "src": "https://delucca.vteximg.com.br/arquivos/img-test.png",
+          "blockClass": "imagePromo"
+        },
+        "title": "Img 4 Banner 1"
+    },
+
+    //-- MOBILE 
+    "responsive-layout.mobile#first-banner": {
+        "children": ["flex-layout.row#banner1-mobile"]
+    }, 
+    "flex-layout.row#banner1-mobile": {
+        "props": {
+            "marginTop": 8,
+            "horizontalAlign": "center",
+            "fullWidth": true,
+            "blockClass": "BannerMobile"
+        }, 
+        "children": ["flex-layout.col#banner1-mobile"],
+        "title": "Mob Banner 1"
+    },
+    "flex-layout.col#banner1-mobile": {
+        "props": {
+            "horizontalAlign": "center",
+            "rowGap": 5
+        }, 
+        "children": ["image#banner1-1", "image#banner1-2", "image#banner1-3", "image#banner1-4"]
+    }
+
+}

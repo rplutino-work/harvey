@@ -1,0 +1,178 @@
+{ /*  desarrollado por Nomada Digital - 02/2022 */
+  /*  Template de la pagina de HOME  */
+  "store.home": {
+    "blocks": [
+      "email-mkt",
+      //"list-context.image-list#demo",
+      "banner-custom-home#Principal", //Nuevo Banners Custom
+      "banner-custom-home#Secundario",
+      "pre-header",
+      "flex-layout.row#black-countdown",
+      "responsive-layout.desktop#shop-the-loop",
+      "responsive-layout.mobile#shop-the-loop",
+      //"responsive-layout.desktop#carousel-home-top", //Carrousel home 
+      //"responsive-layout.mobile#carousel-home-top", //Carrousel home mobile
+      //"slider-layout#text-banner", // TEST 
+      //"rich-text#sale", // titulo de la vitrina                     -> shelf-sale.jsonc
+      //"flex-layout.row#vitrina-sale", // vitrina SALE                             -> shelf-sale.jsonc  
+      //"responsive-layout.desktop#first-banner", // banner #1 de imagenes promo DESKTOP    -> first-banner.jsoonc
+      //"responsive-layout.mobile#first-banner", // banner #1 de imagenes promo MOBILE     -> second-banner.jsonc
+      //"rich-text#titulo1-home", // titulo de la vitrina                     -> shelf-sale.jsonc
+      //"slider-layout#banner2",
+      //"rich-text#titulo2-home",
+      "flex-layout.row#shipping-bar--hidden"
+    ]
+  },
+  "flex-layout.row#shipping-bar--hidden": {
+    "title": "FSB - Ignorar",
+    "children": [
+      "free-shipping-bar#hidden"
+    ],
+    "props": {
+      "blockClass": "shippingBar_hidden"
+    }
+  },
+  "free-shipping-bar#hidden": {
+    "props": {
+      "toggleShow": {
+        "freeShippingComponent": false
+      }
+    }
+  },
+  "banner-custom-home#Principal": {
+    "props": {
+      "id": "Principal"
+    }
+  },
+  "banner-custom-home#Secundario": {
+    "props": {
+      "id": "Secundario"
+    }
+  },
+  "slider-layout#text-banner": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "arrowSize": {
+        "desktop": 18,
+        "mobile": 14
+      },
+      "autoplay": {
+        "timeout": 2600,
+        "stopOnHover": true
+      },
+      "blockClass": "carouselPromos"
+    },
+    "children": [
+      "rich-text#1",
+      "rich-text#2",
+      "rich-text#3"
+    ],
+    "title": "Slider Promos"
+  },
+  // textos del banner
+  "rich-text#1": {
+    "props": {
+      "text": "**ENVÍOS GRATIS** con tu compra superior a $18000",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-5",
+      "blockClass": "textoBannerHome"
+    }
+  },
+  "rich-text#2": {
+    "props": {
+      "text": "Texto 2",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-5",
+      "blockClass": "textoBannerHome"
+    }
+  },
+  "rich-text#3": {
+    "props": {
+      "text": "Texto 3",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-5",
+      "blockClass": "textoBannerHome"
+    }
+  },
+  // slider principal
+  "list-context.image-list#demo": {
+    "children": [
+      "slider-layout#demo-images"
+    ],
+    "props": {
+      "images": [
+        {
+          "image": "https://delucca.vteximg.com.br/arquivos/banner-test1.jpg",
+          "description": "banner principal",
+          "link": "/"
+        },
+        {
+          "image": "https://delucca.vteximg.com.br/arquivos/banner-test1.jpg",
+          "description": "banner principal",
+          "link": "/"
+        }
+      ]
+    },
+    "title": "Slider Banner Principal"
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "autoplay": {
+        "timeout": 3800,
+        "stopOnHover": false
+      },
+      "showPaginationDots": "always",
+      "showNavigationArrows": "never",
+      "blockClass": "sliderPrincipal"
+    }
+  },
+  // titulo home
+  "rich-text#titulo1-home": {
+    "props": {
+      "text": "MOSTRAMOS TU ESTILO",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-3",
+      "blockClass": "titulosHome"
+    },
+    "title": "Titulo Home"
+  },
+  // titulo home
+  "rich-text#titulo2-home": {
+    "props": {
+      "text": "Compartí tu harvey look mencionando a @harveywillys en las redes",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-3",
+      "blockClass": "titulosHome2"
+    },
+    "title": "Titulo Home"
+  },
+  // Countdown
+  "flex-layout.row#black-countdown": {
+    "children": [
+      "countdown"
+    ],
+    "title": "Contador 1",
+    "props": {
+      "blockClass": "row-BlackCountdown",
+      "fullWidth": true
+    }
+  }
+}
